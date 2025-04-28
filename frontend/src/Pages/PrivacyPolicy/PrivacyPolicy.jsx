@@ -2,183 +2,108 @@ import React, { useEffect } from "react";
 import "./PrivacyPolicy.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+
 const PrivacyPolicy = () => {
-  useEffect(()=>{
-    window.scrollTo({
-      top:0,
-    })
-  },[])
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
+
   return (
     <>
-    <Helmet>
-        <title>Privacy & Policy - Panchgavyamrit</title>
+      <Helmet>
+        <title>Privacy & Policy - Goel Mewe Wala</title>
         <meta
           name="description"
-          content="Learn about our privacy policy and how we collect, use, and protect your personal data. Your privacy is important to us."
+          content="Learn how Goel Mewe Wala collects, uses, and protects your personal information. Your privacy and trust are important to us."
         />
       </Helmet>
-      <section class="breadcrumb">
-        <div class="breadcrumb-overlay">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-6 col-6">
-                <Link
-                  to="/"
-                  class="back-icon text-decoration-none text-white d-flex align-items-center gap-2"
-                >
-                  <i class="bi bi-arrow-left"></i> Back to category
+
+      <section className="breadcrumb">
+        <div className="breadcrumb-overlay">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-md-6 col-6">
+                <Link to="/" className="back-icon text-decoration-none text-white d-flex align-items-center gap-2">
+                  <i className="bi bi-arrow-left"></i> Back to category
                 </Link>
               </div>
-              <div class="col-md-6 col-6 text-end">
-                <div class="breadcrumb-nav text-white d-flex justify-content-end gap-2">
-                  <Link class="text-white" to="/">
-                    <i class="bi bi-house"></i>
+              <div className="col-md-6 col-6 text-end">
+                <div className="breadcrumb-nav text-white d-flex justify-content-end gap-2">
+                  <Link className="text-white" to="/">
+                    <i className="bi bi-house"></i>
                   </Link>{" "}
                   /
-                  <Link class="text-white terms-link" to="/privacy-policy">
+                  <Link className="text-white terms-link" to="/privacy-policy">
                     Privacy & Policy
                   </Link>
                 </div>
               </div>
             </div>
-            <h1 class="text-white mt-3">Privacy & Policy</h1>
+            <h1 className="text-white mt-3">Privacy & Policy</h1>
           </div>
         </div>
       </section>
 
-      <section class="privacy-policy-section">
-        <div class="container">
+      <section className="privacy-policy-section">
+        <div className="container">
           <h1>Privacy & Policy</h1>
-          <p>
-            At [Your Company Name], we respect your privacy and are committed to
-            protecting your personal information. This Privacy & Policy page
-            outlines how we collect, use, and protect your data. By using our
-            services, you agree to the terms outlined below.
-          </p>
+          <p>Goel Mewe Wala is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you use our website, place an order, or engage with our services.</p>
 
           <h2>1. Information We Collect</h2>
-          <p>
-            We collect the following types of information to provide and improve
-            our services:
-          </p>
+          <p>We collect the following types of information to enhance your shopping experience:</p>
           <ul>
-            <li>
-              <strong>Personal Identification Information:</strong> Name, email
-              address, phone number, etc.
-            </li>
-            <li>
-              <strong>Non-Personal Identification Information:</strong> Browser
-              type, device type, IP address, etc.
-            </li>
-            <li>
-              <strong>Payment Information:</strong> Billing address and payment
-              details, when applicable.
-            </li>
-            <li>
-              <strong>Cookies:</strong> We use cookies to enhance your user
-              experience and analyze usage data.
-            </li>
+            <li><strong>Personal Information:</strong> Name, email address, phone number, shipping address, and payment information (credit/debit card details, UPI details, etc.).</li>
+            <li><strong>Non-Personal Information:</strong> IP address, browser type, operating system, and browsing activity (pages you visit, products you view, etc.).</li>
+            <li><strong>Cookies:</strong> We may use cookies to personalize your experience on our site.</li>
           </ul>
 
           <h2>2. How We Use Your Information</h2>
-          <p>We use the information we collect for the following purposes:</p>
           <ul>
-            <li>To provide, maintain, and improve our services.</li>
-            <li>To process transactions and manage your orders.</li>
-            <li>
-              To communicate with you regarding updates, promotions, and
-              customer service inquiries.
-            </li>
-            <li>To comply with legal requirements and resolve disputes.</li>
+            <li>To process your orders and deliver the products you purchase.</li>
+            <li>To send you order confirmations, updates, and other transactional information.</li>
+            <li>To send promotional emails, special offers, and newsletters (opt-out available).</li>
+            <li>To improve our website functionality and ensure a better user experience.</li>
+            <li>To protect your personal information and prevent fraud.</li>
           </ul>
 
-          <h2>3. Data Sharing and Disclosure</h2>
-          <p>
-            We will not sell, rent, or trade your personal information to third
-            parties. However, we may share your information with trusted
-            partners and service providers for the following reasons:
-          </p>
+          <h2>3. How We Protect Your Information</h2>
+          <p>We use industry-standard encryption protocols (SSL) to secure your data. We do not store sensitive payment details after transactions are completed.</p>
+
+          <h2>4. Sharing Your Information</h2>
           <ul>
-            <li>To process payments or provide services.</li>
-            <li>For analytics, marketing, and promotional purposes.</li>
-            <li>To comply with legal obligations or protect our rights.</li>
+            <li>We do not sell or rent your personal information to third parties.</li>
+            <li>We may share your data with trusted third parties (e.g., shipping companies) to fulfill your order.</li>
+            <li>We may share information if required by law or to protect our rights and safety.</li>
           </ul>
 
-          <h2>4. Data Security</h2>
-          <p>
-            We take the security of your personal data seriously and implement a
-            variety of security measures to protect your information from
-            unauthorized access, alteration, or disclosure. However, please note
-            that no method of data transmission over the internet is 100%
-            secure.
-          </p>
-
-          <h2>5. Cookies</h2>
-          <p>
-            We use cookies to enhance your browsing experience, personalize
-            content, and analyze website traffic. You can control the use of
-            cookies through your browser settings. Please note that disabling
-            cookies may affect some features of the website.
-          </p>
-
-          <h2>6. Your Rights</h2>
-          <p>You have the right to:</p>
+          <h2>5. Your Rights</h2>
           <ul>
-            <li>Access, update, or delete your personal information.</li>
-            <li>Object to or restrict certain uses of your data.</li>
-            <li>Request the transfer of your data to another service.</li>
-            <li>
-              Withdraw your consent for the use of your data at any time (for
-              certain data usage purposes).
-            </li>
+            <li>You can access, update, or delete your personal data.</li>
+            <li>You can opt-out of marketing communications at any time.</li>
+            <li>To exercise your rights, contact us:</li>
           </ul>
           <p>
-            If you would like to exercise any of these rights, please contact us
-            at{" "}
-            <a href="mailto:support@example.com" class="highlight">
-              support@example.com
-            </a>
-            .
+            <strong>Email:</strong> <a href="mailto:info@goelmewewala.com" className="highlight">info@goelmewewala.com</a><br />
+            <strong>Phone:</strong> +91-9876543210
           </p>
 
-          <h2>7. Third-Party Links</h2>
+          <h2>6. Changes to Privacy Policy</h2>
+          <p>We may update our Privacy Policy occasionally. Changes will be posted here with a revised date. Please check regularly.</p>
+
+          <h2>7. Contact Us</h2>
           <p>
-            Our website may contain links to third-party websites or services.
-            These sites have their own privacy policies, which we encourage you
-            to review. We are not responsible for the content or practices of
-            any third-party websites.
+            <strong>Email:</strong> <a href="goelmewewale@gmail.com" className="highlight">info@goelmewewala.com</a><br />
+            <strong>Phone:</strong> +91-9953843002<br />
+            <strong>Address:</strong> Shop.141 Sec 24, Pocket 11  Rohini  Delhi.
           </p>
 
-          <h2>8. Changes to This Policy</h2>
-          <p>
-            We may update this Privacy & Policy from time to time. Any changes
-            will be posted on this page with an updated "last revised" date.
-            Please review this page periodically to stay informed about how we
-            protect your information.
-          </p>
+          <hr className="my-5" />
 
-          <h2>9. Contact Us</h2>
-          <p>
-            If you have any questions or concerns about our privacy policy or
-            data practices, please contact us at:
-          </p>
-          <p>
-            <strong>Email:</strong>{" "}
-            <a href="mailto:support@example.com" class="highlight">
-              support@example.com
-            </a>
-          </p>
+          
         </div>
       </section>
 
-      <section class="footer-text">
-        <div class="container text-center">
-          <p>
-            By using our services, you acknowledge that you have read and
-            understood our Privacy & Policy.
-          </p>
-        </div>
-      </section>
+      
     </>
   );
 };

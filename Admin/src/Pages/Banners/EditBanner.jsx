@@ -18,7 +18,7 @@ const EditBanner = () => {
     useEffect(() => {
         const fetchBannerData = async () => {
             try {
-                const response = await axios.get(`https://api.panchgavyamrit.com/api/single-banner/${id}`);
+                const response = await axios.get(`http://localhost:8000/api/single-banner/${id}`);
                 setBannerData({
                     bannerImage: response.data.banner.bannerImage,
                     bannerStatus: response.data.banner.bannerStatus,
@@ -59,7 +59,7 @@ const EditBanner = () => {
         }
 
         try {
-            const response = await axios.put(`https://api.panchgavyamrit.com/api/update-banner/${id}`, formData, {
+            const response = await axios.put(`http://localhost:8000/api/update-banner/${id}`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

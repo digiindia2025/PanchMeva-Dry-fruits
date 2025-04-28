@@ -55,7 +55,7 @@ const InvoicePDF = ({ order }) => {
             const details = [];
             for (const product of order.products) {
                 try {
-                    const response = await axios.get(`https://api.panchgavyamrit.com/api/single-product/${product.productId}`);
+                    const response = await axios.get(`http://localhost:8000/api/single-product/${product.productId}`);
                     const productDetails = response.data.product;
 
                     const productInfo = productDetails.productInfo.find(info => info.productweight === product.weight);
@@ -143,7 +143,7 @@ const EditOrder = () => {
     useEffect(() => {
         const fetchOrder = async () => {
             try {
-                const response = await axios.get(`https://api.panchgavyamrit.com/api/single-order-data/${orderId}`);
+                const response = await axios.get(`http://localhost:8000/api/single-order-data/${orderId}`);
                 if (response.data.success) {
                     setOrder(response.data.data);
                     setOrderStatus(response.data.data.orderStatus);
@@ -167,7 +167,7 @@ const EditOrder = () => {
 
     const handleUpdate = async () => {
         try {
-            const response = await axios.put(`https://api.panchgavyamrit.com/api/update-order/${orderId}`, {
+            const response = await axios.put(`http://localhost:8000/api/update-order/${orderId}`, {
                 orderStatus,
                 paymentStatus,
             });
@@ -210,7 +210,7 @@ const EditOrder = () => {
         const payload = { email, password };
 
         try {
-            const response = await axios.post('https://api.panchgavyamrit.com/api/login-via-shiprocket', payload, {
+            const response = await axios.post('http://localhost:8000/api/login-via-shiprocket', payload, {
                 headers: { 'Content-Type': 'application/json' }
             });
             console.log(response)
@@ -230,7 +230,7 @@ const EditOrder = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://api.panchgavyamrit.com/api/shiped-order-shiprocket', orderData, {
+            const response = await axios.post('http://localhost:8000/api/shiped-order-shiprocket', orderData, {
                 headers: { 'Content-Type': 'application/json' }
             });
             console.log(response)

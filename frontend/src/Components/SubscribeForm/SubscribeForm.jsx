@@ -9,7 +9,7 @@ const SubscribeForm = () => {
   const Subscribe = async () => {
     console.log(subscribeEmail)
     try {
-      const res = await axios.post("https://api.panchgavyamrit.com/api/subscribe", { subscribeEmail: subscribeEmail })
+      const res = await axios.post("http://localhost:8000/api/subscribe", { subscribeEmail: subscribeEmail })
       if (res.status === 201) {
         Swal.fire({
           icon: "success",

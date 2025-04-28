@@ -8,7 +8,7 @@ const AllUsers = () => {
     // Fetch all users
     const getApiData = async () => {
         try {
-            const res = await axios.get("https://api.panchgavyamrit.com/api/all-users", {
+            const res = await axios.get("http://localhost:8000/api/all-users", {
                 withCredentials: true, // Axios will automatically send the cookie with the request
             });
 
@@ -39,7 +39,7 @@ const AllUsers = () => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 try {
-                    const res = await axios.delete(`https://api.panchgavyamrit.com/api/delete-user/${id}`, {
+                    const res = await axios.delete(`http://localhost:8000/api/delete-user/${id}`, {
                         withCredentials: true, // Include the cookie with the request
                     });
 

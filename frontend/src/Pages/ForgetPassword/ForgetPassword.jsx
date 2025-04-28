@@ -33,7 +33,7 @@ const ForgetPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://api.panchgavyamrit.com/api/forgot-password', { email });
+      const response = await axios.post('http://localhost:8000/api/forgot-password', { email });
       if (response.data.success) {
         // setIsModalOpen(true);
         Swal.fire({

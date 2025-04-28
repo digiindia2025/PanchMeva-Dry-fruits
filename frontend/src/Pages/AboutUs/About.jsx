@@ -56,66 +56,22 @@ const About = () => {
         <div className="container">
           <div className="about_content">
             <div className="heading">
-              <h2>How we Started?</h2>
+              <h2>About Us – GoEalWewala</h2>
             </div>
             <p>
-              After the proclamation of the revered saints, the nationwide
-              creative Goseva Mahaabhiyaan began on 17 September 1993 from
-              Anandavan Pathmeda, the sacred land of Dwarka, India, and our
-              journey was very challenging. On the same day, 22 Vedalakshana
-              Gomata were being transported to a slaughterhouse in Gujarat on
-              the National Highway 15 and 8 Savatsa Gomata being taken to the
-              border of Pakistan were rescued from the Gomata smugglers and
-              brought to this land by the guardians of Sanchore. At the request
-              of the local Gomata devotees and with the blessings of revered
-              Brahmarshi Shri Magaramji Rajguru, and revered Shri Gotrashiji,
-              the inauguration of this concept with the arrival of the
-              aforementioned Vedlakshana Gomata started. On the holy festival of
-              Vedalakshana Gogeeta Jayanti Festival held in 1993, this Goseva
-              project was named ‘Shri Godham Mahatirtha Anandavan Pathmera’ by
-              the Goshti and revered Gosevapremi saints.
+            At Goel Mewe Wala, we bring you the finest selection 
+            of dry fruits, nuts, and spices, sourced with utmost 
+            care and dedication to purity, quality, and health. Our
+             journey is rooted in a passion for delivering nature’s
+              best products to every household, ensuring a perfect balance
+               between traditional values and modern excellence.
+
             </p>
             <p>
-              PujyaGomata is a source of strength and has medicinal properties
-              to quench the toxin in the entire universe. According to natural
-              science, one Vedalakshana Gomata can give nutrition to a million
-              animals because they give you nourishment and have abundant and
-              vital elements to cure various diseases. Due to the nutritious and
-              enriching nature of the Gomata, it has been given the place of
-              worshipping mother in the Apaurusheya Vedas and Indian culture. In
-              Vedalakshana, Gomata is not only cared for but Gomata urine is
-              used in Ayurveda medicine and their milk and milk products are
-              used to make pure breakfasts or sweets. We have medicines for many
-              types of diseases which have been used successfully for a year.
+              {/* write more */}
             </p>
             <p>
-              Even today in India, inspired by compassion, the work of
-              protecting and serving the Gomata species is being done by the
-              religious saints. There are thousands of Goseva ashrams in the
-              country where the different types of Gomata get shelter. Goseva is
-              performed with great reverence in the ashrams, but the work is
-              going on with limited symbolism and righteousness, while the
-              practice of neglecting and killing the Gomata cattle is
-              widespread, subject to the excessive craving for industrial wealth
-              and excessive selfishness on the basis of the economy. Our
-              religious institutions save only 5 percent of the Gomata cattle,
-              the remaining 95 percent of the bovine economically fall prey to
-              the self-sufficiency of cruel human beings. If we want to avoid
-              the terrible destruction and damage that occurs as a result of
-              killing such a large number of Gomata, then the entire Gomata have
-              to be protected. For this, the revolutionary Gosseva Mahabhayan is
-              absolutely necessary.
-            </p>
-            <p>
-              Anandavan Pathmeda is the holy and captivating land of the country
-              where Lord Krishna stopped in the month of Shravan and Bhadrapada
-              while going from Kurukshetra to Dwarka. He brought the most milch,
-              combative, courageous, brave, gentle, Brahmwaroopa Vedalakshana
-              Gomata from Vrindavan for grazing and wandering. Saint-heartedly,
-              this nation-wide creative Goseva Mahabhiyan was expressed on the
-              land of Anandavan of Shri Godham Mahatirtha Pathmeda due to the
-              suffering of the Gomata cattle. We hope that you too will join our
-              campaign and help us in running it successfully.
+             {/* write more */}
             </p>
           </div>
         </div>
@@ -124,24 +80,23 @@ const About = () => {
         <div className="container">
           <div className="about_content">
             <div className="heading">
-              <h2>Core Value</h2>
+              <h2>Our Journey
+              </h2>
             </div>
             <p>
-              The purpose of forming this institution is to express feelings of
-              kindness. This institution is against any kind of cheap politics,
-              discrimination, and selfishness. Individualism, religiousism, and
-              groupism also have no place in it. This institution believes in
-              co-existence. It follows the fundamental principles that others’
-              interests will be our own interest. Any of its tendencies only
-              works to connect the individual, society, and country. In order to
-              continue the nationwide Goseva Mahabhiyan of Shri Godham
-              Mahathirth Pathmeda in a peaceful manner, such dedicated,
-              disciplined, and hard-working Gomata devotees are being prepared
-              through them Vedlakshana Gomata of Dhenu Conservation, Earth
-              Sustenance, Nature Finishing, Environmental Refinement, and
-              Sanatan Culture, all efforts will be made to create a happy future
-              with the present sorrow of the entire living world including
-              mankind.
+            Goel Mewe Wala was founded in 2013 at 
+            Rohini, Delhi, with a simple yet powerful 
+            vision — to offer premium-quality dry fruits, 
+            nuts, and spices that enrich lives with health 
+            and wellness. What began as a humble initiative 
+            has now grown into a trusted brand known for its
+             commitment to authenticity, freshness, and customer 
+             satisfaction.
+            Inspired by the principles of compassion, 
+            sustainability, and purity, we ensure that 
+           every product we deliver carries the rich goodness
+            of nature and the trust of generations.
+
             </p>
           </div>
         </div>
@@ -150,21 +105,69 @@ const About = () => {
         <div className="container">
           <div className="about_content">
             <div className="heading">
-              <h2>Core Value</h2>
+              <h2>What We Stand For
+              </h2>
             </div>
             <p>
-              Through Shri Godham Mahatirth Pathmeda, protection, shelter, food,
-              and treatment to struggling and ill-treated Gomata are given at
-              Goseva ashrams and other charitable projects established and
-              operated in various parts of the country including Rajasthan and
-              Gujarat. Also, to cooperate, Shri Godham Mahatirth Pathmeda
-              Lokpunayartha Nyas has been duly constituted on 7th April 2017 by
-              the revered Gotrishi Swami Shri Dattasharnanandji. We are working
-              on many projects related to Gomata cattle.
+            At Goel Mewe Wala, quality is our promise, 
+            and integrity is our principle. Every product we 
+            offer is carefully selected, processed, and packaged 
+            to retain its natural taste, nutrition, and 
+            richness. We are committed to:
+            Providing pure, nutritious, and high-grade dry fruits, 
+            nuts, and spices.Practicing ethical sourcing and promoting
+             sustainable farming practices.Upholding transparency, 
+             honesty, and eco-consciousness in all our operations.Encouraging healthy
+            living and well-being through natural, wholesome foods.Our vision is not just 
+            about business — it is about building healthier lifestyles and supporting the environment with every step we take.
+
             </p>
           </div>
         </div>
       </section>
+
+
+      <section className="about-core-values">
+        <div className="container">
+          <div className="about_content">
+            <div className="heading">
+              <h2>Core Values
+
+              </h2>
+            </div>
+            <p>
+            Purity: Bringing natural products without 
+            artificial additives.Compassion: Respect for
+             nature, farmers, and customers alike.Sustainability:
+              Promoting eco-friendly and ethical practices.Integrity: 
+              Ensuring honesty and transparency in every interaction.Health & 
+              Wellness: Helping people live healthier, more balanced lives.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="about-our-work">
+        <div className="container">
+          <div className="about_content">
+            <div className="heading">
+              <h2>Our Mission
+
+              </h2>
+            </div>
+            <p>
+            We aim to be India’s most trusted 
+            brand for dry fruits, nuts, and spices 
+            by offering authentic, healthy, and ethically
+            sourced products.At Goel Mewe Wala, we believe 
+            that by staying true to our roots and values, we 
+            can deliver excellence to every home while making a 
+            positive impact on the world around us.            </p>
+          </div>
+        </div>
+      </section>
+
+
     </>
   );
 };

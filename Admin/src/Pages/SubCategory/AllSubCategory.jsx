@@ -13,7 +13,7 @@ const AllSubCategory = () => {
     useEffect(() => {
         const fetchSubcategories = async () => {
             try {
-                const response = await axios.get('https://api.panchgavyamrit.com/api/get-subcategory'); // Adjust API endpoint
+                const response = await axios.get('http://localhost:8000/api/get-subcategory'); // Adjust API endpoint
                 setSubcategories(response.data.subcategories);
             } catch (error) {
                 toast.error(error.response.data || 'Error fetching subcategories');
@@ -36,7 +36,7 @@ const AllSubCategory = () => {
 
         if (confirmDelete.isConfirmed) {
             try {
-                await axios.delete(`https://api.panchgavyamrit.com/api/delete-subcategory/${id}`); // Replace with your API endpoint
+                await axios.delete(`http://localhost:8000/api/delete-subcategory/${id}`); // Replace with your API endpoint
                 setSubcategories(subcategories.filter(subcategory => subcategory._id !== id)); // Update state
                 Swal.fire('Deleted!', 'The subcategory has been deleted.', 'success');
             } catch (error) {

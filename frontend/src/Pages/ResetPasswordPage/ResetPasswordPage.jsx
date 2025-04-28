@@ -21,7 +21,7 @@ const ResetPasswordPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://api.panchgavyamrit.com/api/reset-password', {
+            const response = await axios.post('http://localhost:8000/api/reset-password', {
                 token,
                 newPassword,
             });

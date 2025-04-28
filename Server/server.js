@@ -94,6 +94,8 @@ app.use("/api", SubcribeRouter);
 app.use("/api" ,shiprocket)
 
 // Start the server
+const PORT = process.env.PORT || 8000;
+// //////////////aman///////////////
 app.listen(process.env.PORT, () => {
     console.log(`Server is running at ${process.env.PORT} port`);
 });

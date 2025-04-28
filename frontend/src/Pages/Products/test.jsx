@@ -5,7 +5,7 @@ import bannerImage3 from "../../images/banner3.png";
 import bannerImage4 from "../../images/banner4.png";
 import "./hero.css";
 import Slider from "react-slick";
-import productImage from "../../images/productImage1.png";
+// import productImage from "../../images/productImage1.png";
 import grocery from "../../images/grocery.png";
 import CountUp from "react-countup";
 import article1 from "../../images/articleimg1.jpg";
@@ -26,7 +26,7 @@ const Hero = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("https://api.panchgavyamrit.com/api/get-product");
+      const response = await axios.get("http://localhost:8000/api/get-product");
       setProducts(response.data.products);
     } catch (error) {
       console.error("Error fetching products:", error);
@@ -317,6 +317,9 @@ const Hero = () => {
         </div>
       </section>
 
+
+      {/* ///////////////////////////aman...//////////////////// */}
+
       <section className="hero-product">
         <div className="container">
           <div className="headings">
@@ -388,6 +391,9 @@ const Hero = () => {
           </div>
         </div>
       </section>
+
+
+      {/* aman.///////////////////////aman///////////// */}
 
       <section className="grocery">
         <div className="container">

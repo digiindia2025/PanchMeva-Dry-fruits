@@ -28,7 +28,7 @@ const Hero = () => {
       setIsLoading(true);
       try {
         const response = await axios.get(
-          "https://api.panchgavyamrit.com/api/all-banner"
+          "http://localhost:8000/api/all-banner"
         );
         const newData = response.data.banners;
         const filterData = newData.filter((x) => x.bannerStatus === true);
@@ -47,7 +47,7 @@ const Hero = () => {
   const fetchProducts = async () => {
     try {
       const response = await axios.get(
-        "https://api.panchgavyamrit.com/api/get-product"
+        "http://localhost:8000/api/get-product"
       );
       const productRecord = response.data.products;
       const filterbestseller = productRecord.filter(
@@ -179,7 +179,7 @@ const Hero = () => {
 
   const getArticalsData = async () => {
     try {
-      const res = await axios.get("https://api.panchgavyamrit.com/api/all-articals")
+      const res = await axios.get("http://localhost:8000/api/all-articals")
       setArticleArr(res.data); // Assuming the API returns an array of articles
     } catch (error) {
       console.log(error)
@@ -272,7 +272,7 @@ const Hero = () => {
                     key={bannerItem.id || index} // Assuming each banner has a unique `id`
                   >
                     <img
-                      src={bannerItem.bannerImage} // Assuming the banner has an 'image' property
+                      src={bannerItem?.bannerImage} // Assuming the banner has an 'image' property
                       className="d-block w-100"
                       alt={`Banner ${index + 1}`}
                     />
@@ -281,7 +281,7 @@ const Hero = () => {
               ) : (
                 <div className="carousel-item active">
                   <img
-                    // src={bannerImage1} // Fallback to a default image
+                    src={banner[0]?.bannerImage} // Fallback to a default image
                     className="d-block w-100"
                     alt="Default Banner"
                   />
@@ -573,8 +573,7 @@ const Hero = () => {
                    heights of the Himalayas, our Shilajit is pure, 
                    unrefined, and packed with essential minerals and 
                    nutrients. Perfect for boosting energy, enhancing
-                    vitality, and promoting overall wellness, this natural 
-                    supplement is a must-have for a balanced and healthy lifestyle.
+                    vitality, and promoting overall wellness, this natural supplement is a must-have for a balanced and healthy lifestyle.
                   </p>
                   {/* <Link className="button_" to="">
     Show More

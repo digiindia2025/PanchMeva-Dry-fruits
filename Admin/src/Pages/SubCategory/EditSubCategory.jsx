@@ -21,7 +21,7 @@ const EditSubCategory = () => {
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await axios.get('https://api.panchgavyamrit.com/api/all-category');
+                const response = await axios.get('http://localhost:8000/api/all-category');
                 setCategories(response.data); // Assuming response.data is an array of categories
             } catch (error) {
                 console.error('Error fetching categories:', error);
@@ -31,7 +31,7 @@ const EditSubCategory = () => {
 
         const fetchSubCategory = async () => {
             try {
-                const response = await axios.get(`https://api.panchgavyamrit.com/api/single-subcategory/${id}`);
+                const response = await axios.get(`http://localhost:8000/api/single-subcategory/${id}`);
                 const { categoryName, subcategoryName, subcategoryImage, subcategoryStatus } = response.data.subcategory;
                 setFormData({
                     categoryName: categoryName._id,  // Set category ID
@@ -73,7 +73,7 @@ const EditSubCategory = () => {
         });
         try {
             const response = await axios.put(
-                `https://api.panchgavyamrit.com/api/update-subcategory/${id}`,
+                `http://localhost:8000/api/update-subcategory/${id}`,
                 apiFormData,
                 {
                     headers: {

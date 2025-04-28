@@ -19,7 +19,7 @@ const EditArtical = () => {
     useEffect(() => {
         const fetchArticalData = async () => {
             try {
-                const response = await axios.get(`https://api.panchgavyamrit.com/api/single-artical/${id}`);
+                const response = await axios.get(`http://localhost:8000/api/single-artical/${id}`);
                 setData({
                     name: response.data.name,
                     descrition: response.data.descrition,
@@ -69,7 +69,7 @@ const EditArtical = () => {
         }
 
         try {
-            await axios.put(`https://api.panchgavyamrit.com/api/update-artical/${id}`, formData, {
+            await axios.put(`http://localhost:8000/api/update-artical/${id}`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

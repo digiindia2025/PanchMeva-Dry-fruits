@@ -25,7 +25,7 @@ const EditProduct = () => {
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await axios.get('https://api.panchgavyamrit.com/api/all-category');
+                const response = await axios.get('http://localhost:8000/api/all-category');
                 setCategories(response.data);  // Set categories to state
             } catch (error) {
                 toast.error('Error fetching categories');
@@ -37,7 +37,7 @@ const EditProduct = () => {
         // Fetch the product details when the component mounts
         const fetchProduct = async () => {
             try {
-                const response = await axios.get(`https://api.panchgavyamrit.com/api/single-product/${id}`);
+                const response = await axios.get(`http://localhost:8000/api/single-product/${id}`);
                 const product = response.data.product;
 
                 setFormData({
@@ -138,7 +138,7 @@ const EditProduct = () => {
             });
 
             // Send the data to backend API for updating the product
-            const response = await axios.put(`https://api.panchgavyamrit.com/api/update-product/${id}`, formDataToSubmit, { headers: { 'Content-Type': 'multipart/form-data' } });
+            const response = await axios.put(`http://localhost:8000/api/update-product/${id}`, formDataToSubmit, { headers: { 'Content-Type': 'multipart/form-data' } });
             toast.success(response.data.message);
             navigate("/all-products")
             setIsLoading(false);

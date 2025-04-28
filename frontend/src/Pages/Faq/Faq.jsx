@@ -74,7 +74,8 @@ const Faq = () => {
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    1. How did Shri Godham Mahatirth Pathmeda begin?
+                    1. What products do you offer at Goel Mewe Wala?
+
                   </button>
                 </h2>
                 <div
@@ -85,12 +86,10 @@ const Faq = () => {
                 >
                   <div class="accordion-body">
                     <p>
-                      The initiative started on September 17, 1993, from
-                      Anandavan Pathmeda, Dwarka, India. It was inspired by
-                      revered saints and marked by the rescue of 22 Vedalakshana
-                      Gomata and 8 Savatsa Gomata from slaughterhouses. The
-                      project was inaugurated with the blessings of saints such
-                      as Brahmarshi Shri Magaramji Rajguru and Shri Gotrashiji.
+                    We specialize in premium-quality dry fruits,
+                     nuts, and spices, carefully sourced and packed to 
+                     deliver freshness, nutrition, and great taste.
+
                     </p>
                   </div>
                 </div>
@@ -105,7 +104,8 @@ const Faq = () => {
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    2. What is the significance of Vedalakshana Gomata?
+                    2. Are your dry fruits and nuts 100% natural?
+
                   </button>
                 </h2>
                 <div
@@ -116,11 +116,9 @@ const Faq = () => {
                 >
                   <div class="accordion-body">
                     <p>
-                      Vedalakshana Gomata is revered for its medicinal and
-                      nourishing properties. They provide nutrition, cure
-                      various diseases, and have been worshipped in Indian
-                      culture for centuries. Their milk, urine, and products are
-                      widely used in Ayurveda and for preparing pure foods.
+                    Yes! All our products are 100% natural with no
+                     artificial colors, flavors, or preservatives. 
+                     We believe in delivering nature’s purest form to you.
                     </p>
                   </div>
                 </div>
@@ -135,7 +133,8 @@ const Faq = () => {
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    3. Why is Gomata protection crucial?
+                    3. How do you ensure the quality of your products?
+
                   </button>
                 </h2>
                 <div
@@ -146,12 +145,10 @@ const Faq = () => {
                 >
                   <div class="accordion-body">
                     <p>
-                      Gomata protection is vital for preserving their medicinal
-                      and environmental benefits. Despite the existence of
-                      Goseva ashrams, only 5% of Gomata are saved from neglect
-                      and slaughter. Protecting the remaining 95% is essential
-                      to prevent ecological and cultural damage caused by their
-                      loss.
+                    We source directly from trusted farmers and vendors.
+                     Every batch undergoes strict quality checks to ensure 
+                     only the best reaches our customers.
+
                     </p>
                   </div>
                 </div>
@@ -166,7 +163,8 @@ const Faq = () => {
                     aria-expanded="false"
                     aria-controls="collapseFour"
                   >
-                    4. What role does Anandavan Pathmeda play in this movement?
+                    4. Do you offer packaging for gifting purposes?
+
                   </button>
                 </h2>
                 <div
@@ -177,10 +175,10 @@ const Faq = () => {
                 >
                   <div class="accordion-body">
                     <p>
-                      Anandavan Pathmeda is the birthplace of the nationwide
-                      Goseva Mahabhiyan. It is a sacred land where Lord Krishna
-                      once grazed Vedalakshana Gomata. Today, it stands as the
-                      center of the revolutionary Gomata protection movement.
+                    Yes, we offer customized gift packs and festive
+                     hampers for weddings, corporate events, festivals, 
+                     and special occasions. Contact us for bulk or personalized orders!
+
                     </p>
                   </div>
                 </div>
@@ -195,8 +193,8 @@ const Faq = () => {
                     aria-expanded="false"
                     aria-controls="collapseFive"
                   >
-                    5. What are the core values of Shri Godham Mahatirth
-                    Pathmeda?
+                    5. Where are you located?
+
                   </button>
                 </h2>
                 <div
@@ -207,11 +205,10 @@ const Faq = () => {
                 >
                   <div class="accordion-body">
                     <p>
-                      The institution focuses on kindness, co-existence, and
-                      non-discrimination. It rejects cheap politics,
-                      selfishness, and groupism. It aims to connect individuals,
-                      society, and the nation while promoting environmental
-                      refinement, nature conservation, and Sanatan culture.
+                    We are based in Rohini, Delhi, and 
+                    proudly serve customers across Delhi NCR 
+                    and beyond through our physical and online presence.
+
                     </p>
                   </div>
                 </div>
@@ -226,7 +223,8 @@ const Faq = () => {
                     aria-expanded="false"
                     aria-controls="collapseSix"
                   >
-                    6. How does the organization support Gomata?
+                    6.  Do you deliver products online?
+
                   </button>
                 </h2>
                 <div
@@ -237,11 +235,10 @@ const Faq = () => {
                 >
                   <div class="accordion-body">
                     <p>
-                      The organization provides protection, shelter, food, and
-                      medical care to struggling Gomata through Goseva ashrams
-                      and other projects. Shri Godham Mahatirth Pathmeda
-                      Lokpunayartha Nyas was established in 2017 to further
-                      these efforts.
+                    Yes! You can place your order through our 
+                    website, WhatsApp, or phone. We offer safe and 
+                    fast delivery to your doorstep.
+
                     </p>
                   </div>
                 </div>
@@ -256,7 +253,8 @@ const Faq = () => {
                     aria-expanded="false"
                     aria-controls="collapseSeven"
                   >
-                    7. Where are the Goseva projects located?
+                    7. What is the shelf life of dry fruits and nuts?
+
                   </button>
                 </h2>
                 <div
@@ -267,9 +265,10 @@ const Faq = () => {
                 >
                   <div class="accordion-body">
                     <p>
-                      The Goseva projects operate across India, including
-                      Rajasthan and Gujarat. They include Goseva ashrams and
-                      charitable initiatives to aid Gomata.
+                    Generally, dry fruits and nuts can last 6 to 12 
+                    months if stored properly in a cool, dry place away 
+                    from sunlight and moisture.
+
                     </p>
                   </div>
                 </div>
@@ -284,9 +283,12 @@ const Faq = () => {
                     aria-expanded="false"
                     aria-controls="collapseEight"
                   >
-                    8. What can individuals do to support this initiative?
+                    8. How can I store dry fruits and nuts to keep them fresh?
+
                   </button>
                 </h2>
+                
+                
                 <div
                   id="collapseEight"
                   class="accordion-collapse collapse"
@@ -295,10 +297,9 @@ const Faq = () => {
                 >
                   <div class="accordion-body">
                     <p>
-                      Individuals can join the Goseva Mahabhiyan by
-                      volunteering, spreading awareness, or contributing
-                      resources to the movement. Collective efforts are vital
-                      for the success of this campaign.
+                    Store them in airtight containers in a cool, 
+                    dry place. For longer freshness, especially 
+                    during hot seasons, you can refrigerate them.
                     </p>
                   </div>
                 </div>

@@ -36,7 +36,7 @@ const ProductDetails = ({refs, setRef}) => {
   useEffect(() => {
     const fetchProductDetails = async () => {
       try {
-        const response = await axios.get(`https://api.panchgavyamrit.com/api/single-product/${id}`);
+        const response = await axios.get(`http://localhost:8000/api/single-product/${id}`);
         setProductDetails(response.data.product);
         setCurrentImage(response.data.product.productImage[0]);
 

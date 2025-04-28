@@ -20,7 +20,7 @@ const Checkout = () => {
     // Fetch all vouchers
     const getCupancode = async () => {
       try {
-        const res = await axios.get("https://api.panchgavyamrit.com/api/all-vouchers");
+        const res = await axios.get("http://localhost:8000/api/all-vouchers");
         if (res.status === 200) {
           setCupanCode(res.data.data);
         }
@@ -33,7 +33,7 @@ const Checkout = () => {
     // Fetch user data
     const getApiData = async () => {
       try {
-        const res = await axios.get(`https://api.panchgavyamrit.com/api/get-user/${userId}`);
+        const res = await axios.get(`http://localhost:8000/api/get-user/${userId}`);
         if (res.status === 200) {
           setUserData(res.data.data);
         }
@@ -105,7 +105,7 @@ const Checkout = () => {
         };
 
         try {
-          const res = await axios.post("https://api.panchgavyamrit.com/api/checkout", checkoutData);
+          const res = await axios.post("http://localhost:8000/api/checkout", checkoutData);
           if (res.status === 201) {
             Swal.fire("Order Placed", "Your order has been placed successfully!", "success");
           }

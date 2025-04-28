@@ -1,13 +1,13 @@
 /* Variables for easier theme management */
 :root {
   --themeColor: #465a6b; 
-  --accentColor: #f39c12; 
+  /* --accentColor: #f39c12;  */
   --darkColor: #34495e; 
   /* --lightColor: #f5f5dc; */
   --grayLight: #f4f6f8;
   --grayMedium: #damee0;
-  --grayDark: #7f8c8d;
-  --shadowColor: rgba(0, 0, 0, 0.15);
+  /* --grayDark: #7f8c8d; */
+  /* --shadowColor: rgba(0, 0, 0, 0.15);   */
   --transitionDuration: 0.3s;
   --borderRadius: 0.375rem; 
 }
@@ -37,7 +37,7 @@ body {
 
 /* Header Top */
 .headerTop {
-  background-color: var(--grayLight);  /* Keep or change*/
+  background-color: var(--grayLight);
   padding: 10px 0;
   border-bottom: 1px solid var(--grayMedium);
 }
@@ -82,23 +82,53 @@ body {
   margin: 0;
   font-size: 0.9rem;
   color: var(--darkColor);
+  
 }
 
 .top-header-search .btn-primary {
-  background-color: var(--themeColor);
-  border: 1px solid var(--themeColor);
+  background-color: DodgerBlue;
+  border: 1px solid black;
   color: var(--lightColor);
   padding: 8px 16px;
   border-radius: var(--borderRadius);
-  transition: background-color var(--transitionDuration) ease, border-color var(--transitionDuration) ease;
+  
 }
 
 .top-header-search .btn-primary:hover {
   /* background-color: #22313f; */
-  border-color: #22313f;
+  /* border-color: #22313f; */
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(1, 1, 1, 1);
+  /* box-shadow: 0 4px 8px rgba(1, 1, 1, 1); */
 }
+/* profile */
+
+/* styles.css */
+
+/* Styling the button */
+.profile-btn {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #3498db; /* Blue color */
+  color: white;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.profile-btn i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.profile-btn .text {
+  font-size: 14px;
+  color: white;
+}
+
 
 /* Main Header */
 .main-header {

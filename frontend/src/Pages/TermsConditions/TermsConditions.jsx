@@ -2,19 +2,21 @@ import React, { useEffect } from "react";
 import "./TermsConditions.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+
 const TermsConditions = () => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
     });
   }, []);
+
   return (
     <>
-     <Helmet>
+      <Helmet>
         <title>Terms and Conditions</title>
         <meta
           name="description"
-          content="Read the Terms and Conditions of using Shri Godham Mahatirtha Anandavan Pathmeda's platform, including policies on donations, content ownership, and user conduct."
+          content="Read the Terms and Conditions of using Goel Mewe Wala's platform, including policies on products, shipping, returns, and user conduct."
         />
       </Helmet>
       <section className="breadcrumb">
@@ -54,132 +56,77 @@ const TermsConditions = () => {
               <h4>Introduction</h4>
             </div>
             <p>
-              Welcome to Shri Godham Mahatirtha Anandavan Pathmeda. These Terms
-              and Conditions outline the rules and regulations for using our
-              platform and services, including Goseva-related activities and
-              projects. By accessing our website and using our services, you
-              agree to abide by these terms. Please read them carefully.
+              Welcome to Goel Mewe Wala! By accessing and using our website (the "Site") or purchasing products from us, you agree to be bound by the following terms and conditions ("Terms"). Please read them carefully.
             </p>
 
             <div>
-              <h4>Acceptance of Terms</h4>
+              <h4>1. General</h4>
             </div>
             <p>
-              By visiting, registering, or using our platform in any way, you
-              agree to be bound by these Terms and Conditions, as well as any
-              additional terms that may be applicable to specific services or
-              features we provide.
+              This Site is owned and operated by Goel Mewe Wala ("we", "us", "our"). These Terms apply to all users of the Site, including without limitation users who are browsers, customers, and merchants.
             </p>
 
             <div>
-              <h4>Purpose of the Platform</h4>
+              <h4>2. Products and Services</h4>
             </div>
             <p>
-              Our platform is dedicated to the protection, preservation, and
-              service of Gomata (sacred cows), as well as promoting awareness of
-              the Goseva movement. We offer various charitable and social
-              services through our organization and ask for your support in this
-              noble cause.
+              We offer premium-quality dry fruits, nuts, and spices. All descriptions, images, and prices of products are subject to change at any time without notice. We reserve the right to discontinue any product at any time.
             </p>
 
             <div>
-              <h4>Use of Our Services</h4>
+              <h4>3. Orders and Payment</h4>
             </div>
             <p>
-              You may use our services for lawful purposes only and in
-              accordance with the mission of our organization. Any use of the
-              platform that contradicts our principles, including harming
-              animals or promoting harmful practices, is strictly prohibited.
-              This includes using our platform for illegal or unethical
-              activities.
+              Orders can be placed through our website or other official communication channels (e.g., WhatsApp, phone). We accept payments via secure payment gateways (Credit/Debit Cards, UPI, Net Banking, etc.). Prices are listed in Indian Rupees (INR) and include applicable taxes unless stated otherwise.
             </p>
 
             <div>
-              <h4>Donations and Contributions</h4>
+              <h4>4. Shipping and Delivery</h4>
             </div>
             <p>
-              Donations and contributions made to our platform are voluntary and
-              will be used solely for the purpose of supporting the welfare of
-              Gomata and continuing the Goseva projects. You acknowledge that
-              all donations are non-refundable and are made with the
-              understanding of the project’s goals and intended use.
+              We deliver across India via trusted courier partners. Estimated delivery time is 3-7 business days, depending on location. Delivery charges (if any) will be mentioned at checkout. Goel Mewe Wala is not responsible for delays caused by courier companies or unforeseen circumstances.
             </p>
 
             <div>
-              <h4>Content Ownership</h4>
+              <h4>5. Return, Replacement, and Refund Policy</h4>
             </div>
             <p>
-              The content on this website, including text, images, and media, is
-              the property of Shri Godham Mahatirtha Anandavan Pathmeda. You are
-              granted a limited, non-exclusive license to access and use the
-              site for personal or charitable purposes, but you may not
-              reproduce, distribute, or display any part of the content without
-              prior written permission.
+              Due to the perishable nature of dry fruits, nuts, and spices, we do not accept returns once the product is delivered. However, if you receive a wrong, damaged, or defective product, please inform us within 48 hours of delivery. Eligible cases will be replaced or refunded based on inspection. To raise an issue, please contact us at [Your Email/Phone Number] with supporting pictures and order details.
             </p>
 
             <div>
-              <h4>User Conduct</h4>
+              <h4>6. Cancellations</h4>
             </div>
             <p>
-              Users must not engage in conduct that:
-              <ul>
-                <li>Violates any local, national, or international laws.</li>
-                <li>Damages, disables, or overburdens our platform.</li>
-                <li>
-                  Interferes with or disrupts the functionality of the website
-                  or services.
-                </li>
-                <li>
-                  Promotes violence, hatred, or discrimination against any group
-                  or individual.
-                </li>
-                <li>
-                  Uses the platform for commercial purposes without
-                  authorization.
-                </li>
-              </ul>
+              Orders can only be cancelled before dispatch. Once the order is shipped, cancellations will not be accepted. Cancellation refunds (if applicable) will be processed within 7-10 business days.
             </p>
 
             <div>
-              <h4>Liability and Indemnification</h4>
+              <h4>7. Intellectual Property</h4>
             </div>
             <p>
-              Shri Godham Mahatirtha Anandavan Pathmeda is not liable for any
-              damages arising from the use of the platform, including but not
-              limited to indirect, incidental, or consequential damages. By
-              using our platform, you agree to indemnify and hold harmless the
-              organization and its affiliates from any claims or damages arising
-              from your actions.
+              All content on this Site — including logos, text, images, graphics, and product descriptions — is the property of Goel Mewe Wala and protected under copyright laws. You may not use, reproduce, or distribute our content without written permission.
             </p>
 
             <div>
-              <h4>Privacy and Data Protection</h4>
+              <h4>8. Limitation of Liability</h4>
             </div>
             <p>
-              We respect your privacy and are committed to protecting your
-              personal information. Please review our Privacy Policy for details
-              on how we collect, use, and protect your data while using our
-              platform.
+              We strive to provide accurate information and high-quality products; however, we do not guarantee that the Site will be error-free or uninterrupted. In no case shall Goel Mewe Wala be liable for any loss or damage arising from your use of our products or services.
             </p>
 
             <div>
-              <h4>Modifications to Terms</h4>
+              <h4>9. Privacy Policy</h4>
             </div>
             <p>
-              We reserve the right to modify or update these Terms and
-              Conditions at any time. Any changes will be communicated through
-              the platform, and your continued use of the services signifies
-              your acceptance of those changes.
+              Your personal information is handled according to our Privacy Policy. We respect your privacy and do not sell or share your data with third parties without consent.
             </p>
 
             <div>
-              <h4>Governing Law</h4>
+              <h4>10. Changes to Terms</h4>
             </div>
             <p>
-              These Terms and Conditions shall be governed by and construed in
-              accordance with the laws of India. Any disputes arising from the
-              use of this platform will be subject to the jurisdiction of the
-              courts located in [Location].
+              We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting on the website. It is your responsibility to review these Terms periodically.
             </p>
           </div>
         </div>

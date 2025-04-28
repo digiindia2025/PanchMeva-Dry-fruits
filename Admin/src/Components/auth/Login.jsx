@@ -13,7 +13,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        'https://api.panchgavyamrit.com/api/log-in',
+        'http://localhost:8000/api/log-in',
         { email, password },
         { withCredentials: true } // Ensure cookies are sent with the request
       );

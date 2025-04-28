@@ -25,7 +25,7 @@ const Contact = () => {
   const postData = async (e) => {
     e.preventDefault()
     try {
-      const res = await axios.post("https://api.panchgavyamrit.com/api/send-enquery", data)
+      const res = await axios.post("http://localhost:8000/api/send-enquery", data)
       if (res.status === 200) {
         Swal.fire({
           title: 'Success!',
@@ -131,8 +131,8 @@ const Contact = () => {
                         <b>Telephone</b>
                       </h5>
                     </div>
-                    <a href="tel:+91 9873745454" className="contact-link">
-                      +91 9873745454
+                    <a href="tel:+91 9953843002" className="contact-link">
+                      +91 9953843002
                     </a>
                   </div>
                 </div>
@@ -151,7 +151,7 @@ const Contact = () => {
                       </h5>
                     </div>
                     <address className="contact-address">
-                      KP-135, Pitampura, Delhi - 110034
+                    Shop.141 Sec 24, Pocket 11  Rohini  Delhi.
                     </address>
                   </div>
                 </div>
@@ -173,7 +173,7 @@ const Contact = () => {
                       href="mailto:gouravpanhal80107@gmail.com"
                       className="contact-link"
                     >
-                      panchgavya.amrit@gmail.com
+                      goelmewewale@gmail.com
                     </a>
                   </div>
                 </div>
