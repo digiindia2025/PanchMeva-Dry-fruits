@@ -32,7 +32,7 @@ const Register = () => {
     try {
       if (data.password === cPass) {
         const res = await axios.post(
-          "https://api.panchgavyamrit.com/api/signup",
+          "http://localhost:8000/api/signup",
           data
         );
         if (res.status === 201) {

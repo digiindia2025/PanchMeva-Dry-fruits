@@ -15,7 +15,7 @@ const Header = () => {
 
   const logout = async () => {
     try {
-      const response = await axios.post('https://api.panchgavyamrit.com/api/log-out', {}, { withCredentials: true });
+      const response = await axios.post('http://localhost:8000/api/log-out', {}, { withCredentials: true });
       if (response.status === 200) {
         localStorage.clear(); // Clear all local storage data
         toast.success("Logout successful!"); // Added feedback for successful logout

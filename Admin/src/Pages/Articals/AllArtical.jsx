@@ -14,7 +14,7 @@ const AllArtical = () => {
         const fetchArticles = async () => {
             setIsLoading(true);
             try {
-                const response = await axios.get('https://api.panchgavyamrit.com/api/all-articals');
+                const response = await axios.get('http://localhost:8000/api/all-articals');
                 console.log(response)
                 setArticles(response.data); // Assuming the API returns an array of articles
             } catch (error) {
@@ -40,7 +40,7 @@ const AllArtical = () => {
             });
 
             if (result.isConfirmed) {
-                await axios.delete(`https://api.panchgavyamrit.com/api/delete-artical/${articleId}`);
+                await axios.delete(`http://localhost:8000/api/delete-artical/${articleId}`);
                 setArticles(articles.filter((article) => article._id !== articleId)); // Remove the deleted article from the state
                 Swal.fire('Deleted!', 'Your article has been deleted.', 'success');
             }

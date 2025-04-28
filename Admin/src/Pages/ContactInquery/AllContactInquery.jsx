@@ -9,7 +9,7 @@ const AllContactInquery = () => {
     useEffect(() => {
         const fetchContacts = async () => {
             try {
-                const response = await axios.get('https://api.panchgavyamrit.com/api/all-contacts');
+                const response = await axios.get('http://localhost:8000/api/all-contacts');
                 setContacts(response.data.contacts);
             } catch (err) {
                 console.error('Failed to fetch contacts:', err);
@@ -28,7 +28,7 @@ const AllContactInquery = () => {
     // Delete a contact
     const handleDelete = async (id) => {
         try {
-            const response = await axios.delete(`https://api.panchgavyamrit.com/api/delete-contact/${id}`);
+            const response = await axios.delete(`http://localhost:8000/api/delete-contact/${id}`);
             console.log(response.data.message);
             setContacts(contacts.filter(contact => contact._id !== id)); // Remove deleted contact from the state
         } catch (err) {

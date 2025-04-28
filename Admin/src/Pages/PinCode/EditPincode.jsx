@@ -17,7 +17,7 @@ const EditPincode = () => {
         // Fetch the existing pincode details
         const fetchPincodeDetails = async () => {
             try {
-                const response = await axios.get(`https://api.panchgavyamrit.com/api/single-pincode/${id}`);
+                const response = await axios.get(`http://localhost:8000/api/single-pincode/${id}`);
                 setPincodeData(response.data);
             } catch (error) {
                 console.error('Error fetching pincode details:', error);
@@ -62,7 +62,7 @@ const EditPincode = () => {
         setBtnLoading(true);
 
         try {
-            await axios.put(`https://api.panchgavyamrit.com/api/update-pincode/${id}`, pincodeData);
+            await axios.put(`http://localhost:8000/api/update-pincode/${id}`, pincodeData);
             toast.success('Pincode updated successfully!');
             navigate('/all-pincodes');
         } catch (error) {

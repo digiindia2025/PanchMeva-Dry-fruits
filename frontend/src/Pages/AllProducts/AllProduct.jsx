@@ -22,7 +22,7 @@
 //     const fetchProducts = async (searchQuery) => {
 //         try {
 //             const response = await axios.get(
-//                 "https://api.panchgavyamrit.com/api/get-product"
+//                 "http://localhost:8000/api/get-product"
 //             );
 
 //             let filteredProducts = response.data.products.filter((product) => product.productStatus === true);
@@ -276,7 +276,7 @@ const AllProduct = ({ refs, setRef }) => {
 
     const fetchProducts = async (searchQuery) => {
         try {
-            const response = await axios.get("https://api.panchgavyamrit.com/api/get-product");
+            const response = await axios.get("http://localhost:8000/api/get-product");
             let filteredProducts = response.data.products.filter(product => product.productStatus === true);
 
             if (searchQuery) {

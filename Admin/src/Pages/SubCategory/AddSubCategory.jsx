@@ -20,7 +20,7 @@ const AddSubCategory = () => {
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await axios.get('https://api.panchgavyamrit.com/api/all-category');
+                const response = await axios.get('http://localhost:8000/api/all-category');
                 setCategories(response.data); // Assuming response.data is an array of categories
             } catch (error) {
                 console.error('Error fetching categories:', error);
@@ -50,7 +50,7 @@ const AddSubCategory = () => {
         });
 
         try {
-            const response = await axios.post('https://api.panchgavyamrit.com/api/add-subcategory', apiFormData, {
+            const response = await axios.post('http://localhost:8000/api/add-subcategory', apiFormData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

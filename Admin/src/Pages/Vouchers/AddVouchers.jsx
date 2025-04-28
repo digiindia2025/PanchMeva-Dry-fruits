@@ -41,7 +41,7 @@ const AddVouchers = () => {
         }
         setIsLoading(true);
         try {
-            const response = await axios.post( 'https://api.panchgavyamrit.com/api/create-vouchers', voucherData );
+            const response = await axios.post( 'http://localhost:8000/api/create-vouchers', voucherData );
             toast.success('Voucher added successfully!');
             setVoucherData({ code: '', discount: '', vouchersStatus: false });
             navigate('/all-vouchers');

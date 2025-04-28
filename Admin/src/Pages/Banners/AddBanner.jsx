@@ -34,7 +34,7 @@ const AddBanner = () => {
         formData.append('bannerStatus', data.bannerStatus);
 
         try {
-            const response = await axios.post('https://api.panchgavyamrit.com/api/create-banner', formData, {
+            const response = await axios.post('http://localhost:8000/api/create-banner', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

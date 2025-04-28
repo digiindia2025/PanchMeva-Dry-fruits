@@ -442,7 +442,7 @@ select:focus-visible {
 
 .article_card img {
   object-fit: cover;
-  width: 100%;
+  width: 200%;
   height: 100%;
   border-radius: 1rem;
   margin-bottom: 1rem;
@@ -479,11 +479,25 @@ select:focus-visible {
   width: 100%;
 }
 
+/* ////////////////////////aman///////////////////// */
+
+
+
+.product-image img {
+  width: 250px;
+  height: 120px;
+  object-fit: cover;
+  margin-left: -45px;
+  border-radius: -1px;
+  
+}
 
 
 @media only screen and (max-width: 768px) {
+
+  
   .cartImage {
-    height: 120px;
+    height: 130px;
     width: 100%;
   }
 
@@ -552,10 +566,10 @@ select:focus-visible {
   .product-image {
     margin: auto;
     position: absolute;
-    top: -77px;
+    top: 77px;
     left: 17%;
     width: 100px;
-    height: 100px;
+    height: 200px;
   }
 
   .product-image img {

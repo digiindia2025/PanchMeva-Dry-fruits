@@ -1,134 +1,124 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import './delivery.css'
+import "./delivery.css";
 import { Helmet } from "react-helmet";
+
 const DeliveryInformation = () => {
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-    });
+    window.scrollTo({ top: 0 });
   }, []);
+
   return (
     <>
-     <Helmet>
-        <title>Delivery Information | वेद लक्षणा</title> {/* Page title */}
+      <Helmet>
+        <title>Shipping Policy | Goel Mewe Wala</title>
         <meta
           name="description"
-          content="Find all the details about our delivery process, timelines, shipping charges, and delivery areas at वेद लक्षणा. Get timely and efficient delivery of your orders."
+          content="Learn about Goel Mewe Wala's shipping process, delivery areas, estimated delivery times, and shipping charges. We ensure fast and secure delivery of your dry fruits, nuts, and spices."
         />
-        <meta name="keywords" content="delivery information, shipping charges, delivery process, shipping policy, वेद लक्षणा" />
+        <meta name="keywords" content="shipping policy, delivery information, Goel Mewe Wala, shipping charges, order delivery" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://panchgavyamrit.com/delivery-information" />
+        <link rel="canonical" href="https://yourwebsite.com/delivery-information" />
       </Helmet>
-      <section class="breadcrumb">
-        <div class="breadcrumb-overlay">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-6 col-6">
-                <Link
-                  to="/"
-                  class="back-icon text-decoration-none text-white d-flex align-items-center gap-2"
-                >
-                  <i class="bi bi-arrow-left"></i> Back to category
+
+      <section className="breadcrumb">
+        <div className="breadcrumb-overlay">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-md-6 col-6">
+                <Link to="/" className="back-icon text-decoration-none text-white d-flex align-items-center gap-2">
+                  <i className="bi bi-arrow-left"></i> Back to Home
                 </Link>
               </div>
-              <div class="col-md-6 col-6 text-end">
-                <div class="breadcrumb-nav text-white align-items-center d-flex justify-content-end gap-2">
-                  <Link class="text-white" to="/">
-                    <i class="bi bi-house"></i>
+              <div className="col-md-6 col-6 text-end">
+                <div className="breadcrumb-nav text-white align-items-center d-flex justify-content-end gap-2">
+                  <Link className="text-white" to="/">
+                    <i className="bi bi-house"></i>
                   </Link>
                   /
-                  <Link class="text-white terms-link" to="/delivery-information">
-                    Delivery Information
+                  <Link className="text-white terms-link" to="/delivery-information">
+                    Shipping Policy
                   </Link>
                 </div>
               </div>
             </div>
-            <h1 class="text-white mt-3">Delivery Information</h1>
+            <h1 className="text-white mt-3">Shipping Policy</h1>
           </div>
         </div>
       </section>
 
-      <section class="delivery-section">
-        <div class="container">
-          <h1>Delivery Information</h1>
-          <p>
-            At वेदलक्षणा , we take pride in delivering your orders in a
-            timely and efficient manner. Below you will find all the essential
-            details about our delivery process and policies.
-          </p>
+      <section className="delivery-section">
+        <div className="container">
+          <h1>Shipping Policy</h1>
+          <p>Thank you for shopping at Goel Mewe Wala! We are committed to providing you with the best shopping experience, including fast and reliable shipping of your orders.</p>
 
-          <h2>1. Delivery Timelines</h2>
-          <p>
-            We strive to deliver all orders as quickly as possible. Here is an
-            estimate of our delivery timelines:
-          </p>
+          <h2>1. Order Processing Time</h2>
           <ul>
-            <li>
-              <strong>Standard Shipping:</strong> 5-7 business days.
-            </li>
-            <li>
-              <strong>Express Shipping:</strong> 2-3 business days.
-            </li>
-            <li>
-              <strong>International Shipping:</strong> 7-14 business days,
-              depending on location.
-            </li>
+            <li>Orders are processed within 1-2 business days.</li>
+            <li>Orders placed on weekends or public holidays are processed on the next business day.</li>
           </ul>
 
-          <h2>2. Shipping Charges</h2>
-          <p>
-            Shipping costs are calculated based on the destination and the
-            weight of your order. You can view the total shipping cost during
-            checkout. We offer:
-          </p>
+          <h2>2. Shipping Areas and Delivery</h2>
           <ul>
-            <li>Free standard shipping on orders over [insert amount].</li>
-            <li>Flat-rate express shipping fee of [insert amount].</li>
-            <li>International shipping fees vary based on the destination.</li>
+            <li>We deliver across India, including major cities and rural areas.</li>
+            <li>Currently, we do not offer international shipping, but it may be available in the future.</li>
+            <li>Shipping is available to all regions across Delhi NCR and other states.</li>
           </ul>
 
-          <h2>3. Delivery Areas</h2>
-          <p>
-            We deliver to most areas within [Country]. However, there are some
-            remote locations where we may not be able to deliver. Please refer
-            to the delivery address input during checkout for availability. We
-            deliver to the following regions:
-          </p>
+          <h2>3. Delivery Time</h2>
           <ul>
-            <li>Urban Areas</li>
-            <li>Suburban Areas</li>
-            <li>Rural Areas</li>
-            <li>International Locations (subject to availability)</li>
+            <li>Standard delivery time: 3 to 7 business days (location dependent).</li>
+            <li>Delivery times may vary due to weather, location, or unforeseen circumstances. We will notify you of significant delays.</li>
           </ul>
 
-          <h2>4. Delivery Problems & Returns</h2>
+          <h2>4. Shipping Charges</h2>
+          <ul>
+            <li>Shipping charges are calculated at checkout based on order weight and delivery location.</li>
+            <li>Orders above ₹999 (for example) are eligible for free shipping. (You can adjust amount later.)</li>
+          </ul>
+
+          <h2>5. Courier Partners</h2>
+          <p>We work with trusted courier services like DTDC, Blue Dart, Delhivery, and others for reliable delivery.</p>
+
+          <h2>6. Order Tracking</h2>
+          <p>Once your order is shipped, you will receive an email or SMS with a tracking number. You can track your order on the respective courier’s website.</p>
+
+          <h2>7. Packaging</h2>
+          <p>We use secure, eco-friendly packaging to ensure the quality and safety of our dry fruits, nuts, and spices during transit.</p>
+
+          <h2>8. Missing or Lost Shipments</h2>
+          <p>If your shipment is missing or lost, contact us within 7 days of the expected delivery date. We will coordinate with our courier partners to resolve the issue.</p>
+
+          <h2>9. Address Accuracy</h2>
           <p>
-            If there are any issues with your delivery, such as delays or
-            damaged goods, please contact our customer support team at &nbsp;
-            <Link to="mailto:support@example.com" class="highlight">
-              support@example.com
-            </Link>
-            &nbsp; We offer hassle-free returns and exchanges within [insert number]
-            days of receiving your order.
+            Please ensure the shipping address provided is correct and complete. Goel Mewe Wala is not responsible for delivery issues arising from incorrect addresses. 
+            If the package is returned, additional shipping fees may apply for re-delivery.
           </p>
 
-          <Link to="/contact-us" class="cta-btn">
+          <h2>10. Special Requests</h2>
+          <p>If you have any special shipping requests or need assistance with bulk orders, please contact us. We’ll do our best to assist you.</p>
+
+          <h2>11. Contact Us</h2>
+          <p>
+            📞 Phone: +91-9953843002 <br />
+            📧 Email: goelmewewale@gmail.com <br />
+            📍 Shop.141 Sec 24, Pocket 11  Rohini  Delhi.
+          </p>
+
+          <Link to="/contact-us" className="cta-btn">
             Contact Us for Assistance
           </Link>
         </div>
       </section>
 
-      <section class="footer-text">
-        <div class="container text-center">
+      <section className="footer-text">
+        <div className="container text-center">
           <p>
-            If you have any other questions about delivery, feel free to check
-            out our &nbsp;
-            <Link to="/faq" class="highlight">
+            For additional questions about shipping, check our &nbsp;
+            <Link to="/faq" className="highlight">
               FAQ page
             </Link>
-            &nbsp;
-            or reach out to us.
+            &nbsp; or reach out to us.
           </p>
         </div>
       </section>
