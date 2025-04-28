@@ -449,7 +449,7 @@ const Hero = () => {
                 <div className="overlay">
                   <div className="firstCol">
                     <h6>Sweets & Cookies</h6>
-                    <h4>Best Quality Cookies & Sweets</h4>
+                    <h4></h4>
                     <p>
                       In the category of fruits, a minimarket typically offers a
                       selection of fresh fruits for customers to purchase. Here

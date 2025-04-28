@@ -472,14 +472,10 @@ const Hero = () => {
             <div className="col-md-7">
               <h4>Pure Ghee, Pure Health</h4>
               <h2>
-                <b>Golden Goodness</b> Authentic Ghee and Wellness Products for
-                You.
+                <b>Nature’s Treasure</b> Premium Dry Fruits and Wholesome Goodness for You.
               </h2>
               <p>
-                Experience the pure richness of authentic ghee, crafted for
-                unmatched taste and nutrition. Explore our range of premium ghee
-                and wellness products designed to enhance your healthy
-                lifestyle.
+              Power up with the pure energy of nature’s finest dry fruits — handpicked for taste, packed for wellness. Your health journey just got delicious!
               </p>
               <Link className="button_" to="/all-products">
                 Check More Products <i class="bi bi-bag"></i>
@@ -525,13 +521,15 @@ const Hero = () => {
               <div className="fruitvegitabls1">
                 <div className="overlay">
                   <div className="firstCol">
-                    <h6>Sweets & Cookies</h6>
-                    <h4>Best Quality Cookies & Sweets</h4>
+                    <h6>Frozen Fruits</h6>
+                    <h4>Best Quality Frozen Fruits</h4>
                     <p>
-                      In the Sweets & Cookies category, customers can indulge in
-                      a wide variety of delicious treats made from the finest
-                      ingredients. From traditional sweets to gourmet cookies,
-                      this section offers something for every taste bud.
+                    In the Frozen Fruits category, customers can enjoy 
+                    a vibrant selection of fruits, harvested at peak ripeness 
+                    and flash-frozen to lock in their natural flavor and nutrition. 
+                    From everyday favorites to exotic varieties, this section offers 
+                    the perfect
+                    ingredients for smoothies, desserts, and healthy snacking.
                     </p>
                     {/* <Link className="button_" to="">
                       Show More
@@ -543,13 +541,17 @@ const Hero = () => {
             <div className="col-md-3 mb-2">
               <div className="fruitvegitabls2">
                 <div className="overlay">
-                  <h6>Pure Cow Ghee</h6>
-                  <h4>100% Shudhta Ka Vada</h4>
+                  <h6>Dry Fruits</h6>
+                  <h4>Best Quality Dry Fruits
+                  </h4>
                   <p>
-                    Experience the purity and richness of Pure Cow Ghee, a
-                    staple for every household. Made with 100% natural
-                    ingredients and adhering to the highest quality standards,
-                    this ghee promises unmatched flavor and health benefits.
+                    In the Dry Fruits category, customers can 
+                    discover a premium selection of nutrient-packed
+                     dried fruits, carefully sourced and dried to 
+                     perfection. Whether you’re looking for a quick 
+                     snack, a boost of energy, or a natural ingredient 
+                     for your recipes, this section offers the finest dried 
+                     fruits, rich in flavor and health benefits.
                   </p>
                   {/* <Link className="button_" to="">
                     Show More
@@ -560,10 +562,19 @@ const Hero = () => {
             <div className="col-md-3 mb-2">
               <div className="fruitvegitabls3">
                 <div className="overlay">
-                  <h6>Chyawanprash</h6>
-                  <h4>100% Pure & Authentic</h4>
+                  <h6>Shilajit
+                  </h6>
+                  <h4>Pure and Authentic Shilajit
+                  </h4>
                   <p>
-                    Enhance your health with the goodness of Chyawanprash, a traditional Ayurvedic formulation. Packed with essential nutrients and herbs, it boosts immunity and vitality, making it a staple for holistic wellness in every household.
+                  In the Shilajit category, customers can 
+                  discover the power of nature’s most potent
+                   mineral supplement. Sourced from the pristine 
+                   heights of the Himalayas, our Shilajit is pure, 
+                   unrefined, and packed with essential minerals and 
+                   nutrients. Perfect for boosting energy, enhancing
+                    vitality, and promoting overall wellness, this natural 
+                    supplement is a must-have for a balanced and healthy lifestyle.
                   </p>
                   {/* <Link className="button_" to="">
     Show More
