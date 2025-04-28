@@ -1,0 +1,105 @@
+.contactUs {
+  background-color: var(--whiteBackground);
+  padding: 2rem 0rem;
+}
+.contectDetails p {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+.contectDetails a {
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+.contectDetails a:hover {
+  color: var(--themeColor);
+}
+
+.contactForm {
+  border: 1px solid lightgray;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+input[type="text"]  , input[type="search"] , input[type = "email"] , input[type = "number"]{
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid var(--themeColor);
+  margin-bottom: 1rem;
+  padding: 5px 10px;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid var(--themeColor);
+  margin-bottom: 1rem;
+  padding: 5px 10px;
+}
+
+.contactForm .contact-form-field button {
+  border: none;
+  width: 100%;
+  background-color: var(--themeColor);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+}
+
+
+.contact-detail-card {
+    padding: 15px;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  } 
+  .contact-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-right: 8px;
+    mix-blend-mode: multiply;
+    background-color: transparent;
+  }
+  
+  .contact-link {
+    font-size: 16px;
+    color: var(--themeColor);
+    text-decoration: none;
+  }
+  
+  .contact-link:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-address {
+    font-style: italic;
+    color: #333;
+  }
+  
+  .contact-bread-desc{
+    width: 50%;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  @media only screen and (max-width:768px) {
+    .contact-bread-desc{
+      width: 100%;
+      margin-top: 0;
+    }
+    .contactForm{
+      padding: 1rem;
+    }
+    .contactUs{
+     padding-top: 0; 
+    }
+  }

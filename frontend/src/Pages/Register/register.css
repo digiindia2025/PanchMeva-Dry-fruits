@@ -1,0 +1,123 @@
+  .register {
+    padding: 2rem 0;
+    background: #f8f9fa;
+  }
+  
+  .registerForm {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .registerForm h2 {
+    color: var(--themeColor);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .register-field {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  .password-toggle-icon{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    top: 7px;
+  }
+  
+  .register-field img {
+    position: absolute;
+    top: 35%;
+    left: 10px;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+  }
+  
+  .register-field input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--themeColor);
+    padding: 0.5rem 2.5rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .register-field input:focus {
+    border-bottom-color: #2ecc71;
+  }
+  
+  .terms {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .register-button {
+    text-align: center;
+  }
+  
+  .register-button button {
+    padding: 0.7rem 2rem;
+    background: var(--themeColor);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .register-button button:hover {
+    background: #2ecc71;
+  }
+  
+  .already-login {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .already-login img {
+    height: 30px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .already-login a {
+    color: var(--themeColor);
+    text-decoration: none;
+  }
+  
+  .already-login a:hover {
+    text-decoration: underline;
+  }
+  
+  .signup {
+    padding: 2rem;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @media only screen and (max-width:768px) {
+    .register_responsive{
+      display: none;
+    }
+    .registerForm{
+      padding: 1rem;
+    }
+  }

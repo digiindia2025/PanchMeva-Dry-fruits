@@ -1,0 +1,58 @@
+.breadcrumb {
+  background: url("") center/cover fixed;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.breadcrumb-overlay {
+  width: 100%;
+  padding: 3rem 0rem;
+  background-color: rgba(0, 0, 0, 0.766);
+}
+
+.breadcrumb-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.breadcrumb-nav a:hover {
+  color: #ddd;
+}
+
+.aboutUs {
+  background-color: var(--whiteBackground);
+  padding: 2rem 2rem;
+}
+
+.heading {
+  border-left: 5px solid var(--themeColor);
+  padding-left: 10px;
+  border-radius: 1rem;
+  color: var(--themeColor);
+  max-width: fit-content;
+}
+
+.aboutUs .about_content .heading {
+  margin-bottom: 1rem;
+}
+
+.about-core-values {
+  background-color: rgba(224, 255, 255, 0.541);
+  padding: 2rem 2rem;
+}
+
+.about-our-work {
+  background-color: #f584340a;
+  padding: 2rem 2rem;
+}
+
+@media only screen and (max-width:768px) {
+  
+.breadcrumb-overlay {
+  padding: 1rem 0rem;
+}
+.aboutUs , .about-core-values , .about-our-work{
+  padding: 1rem 0rem;
+}
+
+}

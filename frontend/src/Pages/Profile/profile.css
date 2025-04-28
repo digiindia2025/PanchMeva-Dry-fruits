@@ -1,0 +1,113 @@
+.prifileContent {
+  border: 2px solid var(--themeColor);
+  max-width: fit-content;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.prifileContent p {
+  margin-bottom: 0;
+}
+
+.profile {
+  padding: 0rem 0rem 2rem 0;
+}
+
+.profile h1 {
+  text-align: center;
+  color: var(--themeColor);
+  margin-bottom: 1rem;
+}
+
+/* ----Order History---- */
+.orderHistory {
+  margin-top: 2rem;
+}
+
+.orderHistory h2 {
+  text-align: center;
+  color: var(--themeColor);
+  margin-bottom: 1rem;
+}
+
+.orderHistory table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.orderHistory th,
+.orderHistory td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+}
+
+.orderHistory th {
+  background-color: var(--themeColor);
+  color: white;
+}
+
+.orderHistory td {
+  font-size: 0.95rem;
+}
+
+.orderHistory tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.orderHistory tr:hover {
+  background-color: #f1f1f1;
+}
+
+.oderHistory {
+  padding: 2rem 0;
+}
+thead.table-dark th {
+  background-color: var(--themeColor) !important;
+  color: white; /* Ensure text contrast */
+}
+
+
+.oderHistory .table-responsive {
+  overflow-x: auto;
+}
+
+.oderHistory table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.oderHistory th,
+.oderHistory td {
+  font-size: 0.85rem; /* Reduce font size for better readability on mobile */
+}
+
+.oderHistory img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-thumbnail{
+  height: 80px;
+  width: 80px;
+}
+
+@media only screen and (max-width:768px) {
+  .oderHistory{
+    max-width: 90%;
+    margin: auto;
+  }
+  .img-thumbnail{
+    width: 100%;
+    height: 100%;
+  }
+  .profile{
+    padding: 0 0 1rem 0;
+  }
+  .oderHistory {
+    padding: 1rem 0px 0 0;
+  }
+
+}

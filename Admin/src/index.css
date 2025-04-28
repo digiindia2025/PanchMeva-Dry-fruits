@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+:root{
+  --main-bg : #E4E9F7;
+
+  --light-white: #f0f0f0;
+  --light-white-p: #6c757d;
+  --color-main: #2E3F97;  
+  --color-main-light: #F58634;  
+  --color-anchor: #0d6efd;
+  --color-blue: #4d8aff;
+  --color-dark-blue: #004269;
+  --color-blu : #4387c0;
+  --color-blue-light : #00AAA9;
+  --color-orange : orange;
+  --color-green : rgb(44, 185, 16);
+
+  --border-color-1 : rgba(101, 119, 134, 0.36);
+  --transition-3: all 300ms ease-in;
+  --transition-4: all 400ms ease-in;
+}
+body{
+  background: var(--light-white) !important;
+  overflow-x: hidden;
+}
+body .rightside{
+  margin-top: 4rem;
+  margin-left: 250px;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+ol, ul {
+  padding-left: 0rem;
+  margin-bottom: 0rem;
+}
+@media only screen and (max-width: 768px){
+  body .rightside{
+    margin-left: 0px;
+  }
+}
+
+
+/* ---- Breadcrumb ---  */
+.bread{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--color-main-light);
+  border-top: 2px solid var(--color-main-light);
+  padding: 0.5rem 0rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  z-index: 1000;
+}
+.bread h4{
+  margin-bottom: 0rem;
+  color: var(--color-main);
+}
+.bread .links a{
+  font-size: 1.1rem;
+  color: white;
+  background: var(--color-main-light);
+  padding: 0.4rem 1rem;
+}
+
+/* --  */
+.filteration {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--color-main-light);
+  padding: 0.5rem 0rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.filteration option , 
+.filteration select ,
+.filteration input{
+  outline: none;
+  border: 1px solid var(--color-main-light) ;
+}
+
+
+/* -------- d-table ----  */
+.d-table{
+  width: 100%;
+  margin: 1rem 0rem;
+  overflow-x: auto;
+  font-size: 0.88rem;
+}
+.d-table i{
+  font-size: 0.78rem;
+}
+.d-table th{
+  font-weight: 500;
+  min-width: max-content;
+}
+.d-table img{
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+.d-table .bt{
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  transition: var(--transition-3);
+}
+.d-table .bt:hover{
+  opacity: 0.5;
+}
+.d-table .bt.edit{
+  background: var(--color-green);
+}
+.d-table .bt.delete{
+  background: red;
+}
+
+
+
+/* --- d-form ---  */
+.d-form{
+  margin: 1rem 0rem;
+  padding: 1rem 0.5rem;
+  background: white;
+  border-radius: 10px;
+}
+.form-control , 
+.form-select{
+  border: 1px solid var(--color-blue-light) !important;
+  outline: none;
+}
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: var(--color-blue-light) !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+.form-check-input{
+  border-color: var(--color-blue-light) !important;
+}
+.form-check-input:checked {
+  background-color: var(--color-blue-light) !important;
+  border-color: var(--color-blue-light) !important;
+}
+.form-check-input:focus ,
+.form-select:focus{
+  border-color: var(--color-blue-light) !important;
+  box-shadow: none !important;
+}
+button[type="submit"]{
+  padding: 0.3rem 1rem;
+  border: 1px solid var(--color-main-light);
+  outline: none;
+  background: var(--color-main-light);
+  background: var(--color-green);
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+

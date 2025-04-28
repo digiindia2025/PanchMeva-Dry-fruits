@@ -1,0 +1,123 @@
+  .login {
+    padding: 2rem 0;
+    background: var(--backgroundColor);
+  }
+  
+  .loginForm {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loginForm h2 {
+    color: var(--themeColor);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .login-field {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .login-field img {
+    position: absolute;
+    top: 35%;
+    left: 10px;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+  }
+  
+  .login-field input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--themeColor);
+    padding: 0.5rem 2.5rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .login-field input:focus {
+    border-bottom-color: var(--green);
+  }
+  
+  .terms {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .login-button {
+    text-align: center;
+  }
+  
+  .login-button button {
+    padding: 0.7rem 2rem;
+    background: var(--themeColor);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .login-button button:hover {
+    background: var(--themeColor);
+  }
+
+  .signup h3.new-customer {
+    color: var(--themeColor);
+    margin-bottom: 1rem;
+  }
+  
+  .signup hr {
+    margin: 1rem 0;
+    border: 1px solid var(--themeColor);
+  }
+  
+  .signup .register-heading {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .signup .register-info {
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .signup img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+  
+  .signup .register-button a {
+    padding: 0.7rem 2rem;
+    background: var(--themeColor);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background 0.3s;
+  }
+
+  .forgot-password img{
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    mix-blend-mode: multiply;
+  }
+
+
+  @media only screen and (max-width:768px) {
+    .loginForm{
+      padding: 1rem;
+    }
+  }
+  

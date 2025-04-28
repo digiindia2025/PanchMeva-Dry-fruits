@@ -1,0 +1,149 @@
+.rightNav ul li.active a {
+    color: #F58634;
+    font-weight: bold;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.top-head {
+    height: 4rem;
+    background: var(--color-main-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 2rem;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid white;
+    z-index: 999;
+}
+
+.top-head>div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.top-head h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+}
+
+.top-head .bar {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.top-head .left a {
+    background: white;
+    color: var(--color-main-light);
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.top-head .left .logout {
+    color: red;
+    background: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.rightNav {
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    background: var(--color-main-light);
+    /* background: #9ae5f8; */
+    height: 100%;
+    overflow-y: auto;
+    width: 250px;
+    padding: 0.2rem 1.4rem;
+    transition: var(--transition-3);
+}
+
+.rightNav ul {
+    padding-left: 0rem;
+}
+
+.rightNav li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem 0rem;
+    transition: var(--transition-3);
+}
+
+.rightNav li a:hover {
+    background: white;
+    color: var(--color-main-light);
+    padding-left: 0.4rem;
+    border-radius: 15px;
+}
+
+.rightNav .logout {
+    border: 1px solid red;
+    outline: none;
+    width: 100%;
+    background: red;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 1rem 0rem;
+    transition: var(--transition-3);
+}
+
+.rightNav .logout:hover {
+    color: red;
+    background: white;
+}
+
+.top-head .bar {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .top-head .bar {
+        display: block;
+    }
+
+    .rightNav {
+        left: -250px;
+    }
+
+    .rightNav.active {
+        left: 0px;
+    }
+
+    .top-head .left {
+        display: none;
+    }
+
+    .top-head>div {
+        justify-content: space-between;
+        gap: 0.5rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .top-head h2 {
+        font-size: 1.3rem;
+    }
+
+    .top-head .bar {
+        cursor: pointer;
+        font-size: 1.4rem;
+    }
+}

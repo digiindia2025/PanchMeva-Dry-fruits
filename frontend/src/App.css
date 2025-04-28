@@ -1,0 +1,83 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --themeColor: #f58634;
+  --green: #008060;
+  --whiteBackground: rgba(211, 211, 211, 0.109);
+}
+
+body {
+  font-family: "Poppins", serif;
+}
+
+/* .slick-prev, .slick-next{
+    top: 65%;
+} */
+
+.testimonial_cards .slick-prev {
+  top: 50% !important;
+}
+.testimonial_cards .slick-next {
+  top: 50% !important;
+}
+
+.testimonialProduct .product-card {
+  margin-top: 131px;
+}
+
+.minibreadCrumb {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  padding: 1.5rem 0;
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2rem;
+}
+
+.back-icon {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.back-icon i {
+  border: 1px solid var(--themeColor);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+}
+
+.tab-content .slick-prev , .tab-content .slick-next{
+  top: 65%;
+}
+
+.hero-product .slick-prev , .hero-product .slick-next{
+  top: 65%;
+}
+
+.slick-list {
+  padding: 1rem 0;
+}
+@media only screen and (max-width: 768px) {
+  .slick-next,
+  .slick-prev {
+    top: 60% !important;
+  }
+
+  .back-icon {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .minibreadCrumb{
+    margin-bottom: 1rem;
+  }
+  .breadSpan{
+    font-size: 12px;
+  }
+}
+

@@ -1,0 +1,53 @@
+.cupan-code-button {
+  width: 200px;
+  background-color: #F58634;
+  height: 35px;
+  border: #F58634;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.checkout {
+  padding: 2rem 0;
+  background-color: var(--whiteBackground);
+}
+
+select {
+  width: 100%;
+  border: 1px solid var(--themeColor);
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 90%;
+  max-width: fit-content;
+}
+
+.popup-content img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  background-color: transparent;
+}

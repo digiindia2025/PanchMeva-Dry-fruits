@@ -1,0 +1,98 @@
+
+/* Terms and Conditions Section */
+.terms-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    padding: 30px;
+  }
+  
+  .terms-section h1 {
+    font-size: 36px;
+    color: var(--themeColor);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .terms-section h4 {
+    color: var(--themeColor);
+    margin-top: 30px;
+  }
+  
+  .terms-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  
+  .terms-section ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .terms-section .highlight {
+    font-weight: bold;
+    color: var(--themeColor);
+  }
+  
+  .terms-section .cta-btn {
+    background-color: var(--themeColor);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .terms-section .cta-btn:hover {
+    background-color: #007c74;
+  }
+  
+  .terms-section .footer-text {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 50px;
+    color: #777;
+  }
+  
+  .terms-section .footer-text a {
+    color: var(--themeColor);
+    text-decoration: none;
+  }
+  
+  .terms-section .footer-text a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .terms-section h1 {
+      font-size: 28px;
+    }
+  
+    .terms-section h2 {
+      font-size: 22px;
+    }
+  
+    .terms-section p {
+      font-size: 14px;
+    }
+  
+    .terms-section .cta-btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+    .terms-link{
+      font-size: 10px;
+    }
+    .terms-section{
+      padding: 1rem 0;
+      margin: 0;
+    }
+  }

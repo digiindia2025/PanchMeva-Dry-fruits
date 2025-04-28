@@ -1,0 +1,266 @@
+:root {
+  --themeColor: #ff6347; /* Adjust this to your preferred theme color */
+}
+
+.global-search{
+  margin-top: 1rem;
+}
+
+.headerTop {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+}
+
+.top-header-main ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 15px;
+  margin-bottom: 0;
+}
+
+.top-header-main ul li a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.top-header-main ul li a:hover {
+  color: var(--themeColor);
+}
+
+.top-header-time {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.top-header-time p{
+  margin-bottom: 0;
+}
+.top-header-search{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+
+}
+
+.top-header-search p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #222;
+}
+
+.top-header-search .btn-primary {
+  background-color: var(--themeColor);
+  border-color: var(--themeColor);
+  border: none;
+}
+.top-header-search .btn-primary:hover{
+  background-color: #ff6347;
+  border: none;
+}
+
+.main-header {
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.header-main ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  margin-bottom: 0;
+}
+
+.header-main ul li a {
+  color: #222;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.header-main ul li a:hover {
+  color: var(--themeColor);
+  border-bottom: 2px solid var(--themeColor);
+}
+
+.header-card-option {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-card-option a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.header-card-option a:hover {
+  text-decoration: underline;
+}
+
+.btn-success {
+  background-color: var(--themeColor);
+  border: none;  
+  height: 50px;
+  width: 50px;
+}
+
+.btn-success:hover {
+  border: none;
+  background-color: #ff6347;
+}
+
+.main-header .row .col-md-2{
+  border-right: 1px solid lightgray;
+  height: 50px;
+  align-items: center;
+  display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -4px 0 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar .close-btn {
+  align-self: flex-end;
+  font-size: 2rem;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  /* margin-bottom: 20px; */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+  text-align: end;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+
+}
+/* 
+.sidebar ul li a:hover {
+  color: var(--themeColor);
+} */
+
+.toggleButton{
+  border: none;
+  background-color: transparent;
+}
+.toggleButton i{
+  font-size: 22px;
+  color: var(--themeColor);
+}
+
+.responsiveHeaderTop{
+  display: none;
+}
+
+.sidebarCloseBtn{
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: end;
+}
+
+.logo{
+  width: 60%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header-row{
+    padding: 5px 0;
+  }
+  .logo{
+    width: 40%;
+  }
+  .main-header .row .col-md-2{
+    height: 40px;
+    border-right: 0;
+  }
+  .top-header-main ul{
+    display: flex;
+    justify-content: center;
+  }
+  .top-header-main ul li a{
+    font-size: 12px;
+  }
+  .top-header-time p{
+    font-size: 10px;
+  }
+  .headerTop{
+    padding: 5px;
+    background-color: #004d4026;
+  }
+  .top-header-search .btn-primary{
+    font-size: 12px;
+  }
+  .top-header-search{
+    display: flex;
+    justify-content: end;
+  }
+  .header-main {
+    display: none;
+  }
+
+  .header-card-option {
+    display: none !important;
+  }
+  .main-header{
+    padding: 0px;
+  }
+  .desktopHeaderTop{
+    display: none;
+  }
+  .responsiveHeaderTop{
+    display: flex;
+    align-items: center;
+  }
+  .responsiveHeaderTop input{
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,633 @@
+.sidebutton,
+.sidewhatsapp,
+.sidecall {
+  position: relative;
+}
+
+.sidebutton a,
+.sidewhatsapp a,
+.sidecall a {
+  position: fixed;
+  right: 20px;
+  z-index: 99;
+  background-color: #fff;
+  /* default background */
+  padding: 10px 15px;
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Positioning */
+.sidebutton a {
+  top: 83%;
+  background-color: var(--themeColor);
+}
+
+.sidewhatsapp a {
+  top: 72%;
+  background-color: rgb(37, 211, 102);
+}
+
+.sidecall a {
+  top: 61%;
+  background-color: var(--green);
+}
+
+/* Hover Effects */
+.sidebutton a:hover {
+  transform: scale(1.2) rotate(15deg);
+  background-color: #f92c8b;
+  /* Pink color for hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* Shadow effect */
+}
+
+.sidewhatsapp a:hover {
+  transform: scale(1.2) rotate(15deg);
+  background-color: #25d366;
+  /* WhatsApp green hover color */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* Shadow effect */
+}
+
+.sidecall a:hover {
+  transform: scale(1.2) rotate(15deg);
+  background-color: #34b7f1;
+  /* Light blue for call hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* Shadow effect */
+}
+
+/* Animations for subtle movement */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.sidebutton a,
+.sidewhatsapp a,
+.sidecall a {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.heroCarousel {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.heroCarousel .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #004d405e;
+  z-index: 3;
+}
+
+.heroCarousel .carousel-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.heroCarousel .carousel-item img {
+  height: 60vh;
+  object-fit: cover;
+}
+
+.overlayContent {
+  position: relative;
+  max-width: 50%;
+  top: 20%;
+  margin: auto;
+  text-align: center;
+}
+
+.overlayContent h5 {
+  color: var(--themeColor);
+  text-align: center;
+  font-size: 30px;
+}
+
+.overlayContent h1 {
+  color: white;
+  max-width: 70%;
+  margin: 1rem auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.overlayContent p {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.button_ {
+  background-color: var(--themeColor);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* hero product section */
+
+.headings {
+  text-align: center;
+}
+
+.headings h2 {
+  color: var(--themeColor);
+  font-size: 40px;
+}
+
+.hero-product,
+.grocery {
+  background-color: var(--whiteBackground);
+  padding: 2rem 0rem;
+}
+
+.hero-product {
+  padding: 20px 0px;
+}
+
+.product-card {
+  width: 270px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: transparent;
+  position: relative;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.product-card a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.product-image {
+  margin: auto;
+  position: absolute;
+  top: -120px;
+  left: 20%;
+  width: 150px;
+  height: 150px;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productName {
+  display: flex;
+  text-align: start;
+  align-items: baseline;
+  margin-top: 10px;
+}
+
+.wishlist {
+  color: #00a884;
+  font-size: 14px;
+  text-align: right;
+  margin-bottom: 8px;
+}
+
+.wishlist span {
+  color: #aaa;
+}
+
+.product-title {
+  font-size: 14px;
+  /* font-weight: bold; */
+  /* color: var(--themeColor); */
+  margin: 8px 0;
+}
+
+.price {
+  margin: 8px 0;
+  width: 30%;
+  /* text-align: end; */
+}
+
+.current-price {
+  font-size: 14px;
+  /* font-weight: bold; */
+  color: var(--green);
+}
+
+.original-price {
+  font-size: 12px;
+  color: red;
+  /* text-decoration: line-through; */
+  margin-left: 8px;
+}
+
+.pot-label {
+  display: block;
+  text-align: left;
+  color: #f00;
+  font-size: 14px;
+  margin: 8px 0 4px;
+}
+
+/* 
+.pot-select {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+} */
+select:focus-visible {
+  outline: 1px solid var(--themeColor);
+}
+
+.pot-select:focus {
+  border: none;
+}
+
+.add-to-cart {
+  width: 100%;
+  padding: 10px 10px;
+  background-color: var(--themeColor);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #008c6a;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--themeColor) !important;
+}
+
+/* hero product section end */
+
+/* grocerry section */
+.grocery h4 {
+  color: var(--themeColor);
+}
+
+.grocery h2 {
+  font-size: 40px;
+  font-weight: 200;
+}
+
+/* grocerry section end */
+
+/* count up section */
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.stat-item {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.stat-item h1 {
+  font-size: 3rem;
+  color: var(--themeColor);
+  margin: 0;
+}
+
+.stat-item p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 8px;
+}
+
+/* count up end section */
+
+/* product details section  */
+
+.productDetailsCols .fruitvegitabls1 {
+  background-image: url(../../images/HeroImage/cookies.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.productDetailsCols .fruitvegitabls2 {
+  background-image: url(../../images/HeroImage/ghee.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.productDetailsCols .fruitvegitabls3 {
+  background-image: url(../../images/HeroImage/Chyawanprash.webp);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.fruitvegitabls1 .overlay .firstCol {
+  width: 50%;
+}
+
+.fruitvegitabls1 .overlay,
+.fruitvegitabls2 .overlay,
+.fruitvegitabls3 .overlay {
+  background-color: #00000089;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.fruitvegitabls1,
+.fruitvegitabls2,
+.fruitvegitabls3 {
+  border-radius: 1rem;
+}
+
+.fruitvegitabls1 h6,
+.fruitvegitabls2 h6,
+.fruitvegitabls3 h6 {
+  color: var(--themeColor);
+}
+
+.fruitvegitabls1 h4,
+.fruitvegitabls2 h4,
+.fruitvegitabls3 h4 {
+  color: white;
+}
+
+.fruitvegitabls1 p,
+.fruitvegitabls2 p,
+.fruitvegitabls3 p {
+  color: white;
+}
+
+/* product details section end */
+
+/* subscribes section */
+.subscribes {
+  padding: 2rem 0;
+}
+
+.subscribes .container {
+  background-color: #fd6f0612;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.subscribeInput {
+  border: 1px solid black;
+  border-radius: 2rem;
+  width: 70%;
+  padding: 10px 20px;
+}
+
+/* subscribes section end */
+
+/* article section */
+
+.article {
+  padding: 2rem 0rem;
+}
+
+.article_card {
+  padding: 1rem;
+  border-radius: 2rem;
+  height: 100%;
+  max-width: 95%;
+  background-color: #fd6f0612;
+}
+
+.article_card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.article_card h5 {
+  color: var(--themeColor);
+  text-align: start;
+}
+
+.article_card p {
+  text-align: start;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.article_card .date {
+  color: var(--themeColor);
+  text-align: start;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/* article section end */
+
+.cartimagediv {
+  display: flex;
+  justify-Content: center;
+  align-Items: center;
+}
+
+.cartImage {
+  height: 500px;
+  width: 100%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .cartImage {
+    height: 120px;
+    width: 100%;
+  }
+
+  .article_card {
+    max-width: 100%;
+  }
+
+  .overlayContent {
+    max-width: 100%;
+    top: 5%;
+  }
+
+  .overlayContent h5 {
+    font-size: 16px;
+  }
+
+  .overlayContent h1 {
+    max-width: 70%;
+    font-size: 20px;
+  }
+
+  .overlayContent p {
+    font-size: 12px;
+  }
+
+  .carousel-item img {
+    height: fit-content !important;
+    object-fit: cover;
+  }
+
+  .stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .slick-next {
+    right: 0 !important;
+  }
+
+  .slick-prev {
+    left: 0 !important;
+    z-index: 99;
+  }
+
+  .product-card {
+    width: 96%;
+    padding: 20px 5px;
+    margin-top: 5rem;
+    height: fit-content;
+  }
+
+  .fruitvegitabls1 .overlay .firstCol {
+    width: 100%;
+  }
+
+  .responsiveHeaderTop input[type="search"] {
+    margin-bottom: 0;
+  }
+
+  .add-to-cart {
+    max-width: fit-content;
+    font-size: 12px;
+  }
+
+  .product-image {
+    margin: auto;
+    position: absolute;
+    top: -77px;
+    left: 17%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .product-image img {
+    width: 100px;
+    top: -70px;
+    left: 25px;
+  }
+
+  .product-title {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  select {
+    margin-bottom: 5px;
+    padding: 0 !important;
+    font-size: 12px;
+  }
+
+  .current-price {
+    font-size: 12px;
+  }
+
+  .original-price {
+    font-size: 12px;
+  }
+
+  .hero-product {
+    padding: 20px 0px;
+  }
+
+  .hero-product,
+  .grocery {
+    padding: 1rem 0rem;
+  }
+
+  .grocery h2 {
+    font-size: 24px;
+  }
+
+  .headings h2 {
+    font-size: 25px;
+  }
+
+  .slick-list {
+    padding: 15px 0;
+  }
+
+  .subscribes .container {
+    padding: 1rem;
+  }
+
+  .subscribes {
+    padding: 0;
+  }
+
+  .article {
+    padding: 0;
+  }
+
+  .productName {
+    display: block;
+    margin: 0;
+  }
+
+  .pot-label {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .price {
+    width: 50%;
+  }
+
+}

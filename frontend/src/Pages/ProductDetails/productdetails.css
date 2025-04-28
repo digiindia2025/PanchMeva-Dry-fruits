@@ -1,0 +1,130 @@
+.out-of-stock-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+.product-details {
+  background-color: var(--backgroundColor);
+  padding-bottom: 1rem;
+}
+
+.review i {
+  color: gold;
+  font-weight: bold;
+}
+
+.review {
+  display: flex;
+  gap: 5px;
+}
+
+.product-details-content a {
+  color: var(--themeColor);
+  text-decoration: none;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.product-details-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-details-content li {
+  margin: 10px 0;
+}
+
+.quantity-buttons {
+  border: 1px solid var(--themeColor);
+  border-radius: 2rem;
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
+.quantity-buttons button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  box-shadow: none;
+  transition: none;
+  margin: 0;
+}
+
+.slider-container {
+  position: relative;
+}
+
+.thumbnail-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnail-wrapper {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.thumbnail-wrapper img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.thumbnail-wrapper img:hover {
+  border-color: var(--themeColor);
+}
+
+.product-image-product {
+  width: 150px;
+  margin: auto;
+  position: absolute;
+  top: -120px;
+  left: 50px;
+  height: 150px;
+}
+
+.descriptionsTabs {
+  border: 1px solid lightgray;
+  padding: 2rem 0;
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+
+.product-details-description-button {
+  border: 1px solid var(--themeColor);
+  padding: 8px 20px;
+  text-decoration: none;
+  color: black;
+  border-radius: 2rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .thumbnail-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .thumbnail-wrapper img {
+    width: 60px;
+    height: 60px;
+  }
+  .descriptionsTabs {
+    margin-top: 0rem;
+  }
+  .product-image-product {
+    width: 100px;
+    margin: auto;
+    position: absolute;
+    top: -80px;
+    left: 22px;
+    height: 100px;
+  }
+}
