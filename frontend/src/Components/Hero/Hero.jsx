@@ -53,6 +53,7 @@ const Hero = () => {
       const filterbestseller = productRecord.filter(
         (x) => x.bestseller === true
       );
+    
       setProducts(filterbestseller.filter((product) => product.productStatus === true));
     } catch (error) {
       console.error("Error fetching products:", error);
@@ -323,7 +324,7 @@ const Hero = () => {
           </div>
           <div className="slider-container">
             <Slider {...settings}>
-              {products.map((product, index) => (
+              {products?.map((product, index) => (
                 <div key={index}>
                   <div className="product-card">
                     {/* <Link to={"/product/product-details"}> */}
