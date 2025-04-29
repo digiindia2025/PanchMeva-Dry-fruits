@@ -36,7 +36,7 @@ const Header = () => {
       <header>
         <div className="top-head">
           <div className="right">
-            <h2>Ved Lakshna Admin Panel</h2>
+            <h2>Goel Mewe Wala Admin Panel</h2>
             <div className="bar" onClick={handletoggleBtn}>
               <i class="fa-solid fa-bars"></i>
             </div>
