@@ -86,19 +86,13 @@ body {
 }
 
 .top-header-search .btn-primary {
-  background-color: DodgerBlue;
-  /* border: 1px solid black; */
-  /* color: var(--lightColor); */
+  background-color: var(--themeColor);
   padding: 8px 16px;
   border-radius: var(--borderRadius);
-  
 }
 
 .top-header-search .btn-primary:hover {
-  /* background-color: #22313f; */
-  /* border-color: #22313f; */
   transform: translateY(-2px);
-  /* box-shadow: 0 4px 8px rgba(1, 1, 1, 1); */
 }
 /* profile */
 
