@@ -53,7 +53,7 @@ const Hero = () => {
       const filterbestseller = productRecord.filter(
         (x) => x.bestseller === true
       );
-    
+
       setProducts(filterbestseller.filter((product) => product.productStatus === true));
     } catch (error) {
       console.error("Error fetching products:", error);
@@ -334,118 +334,126 @@ const Hero = () => {
                         alt={product.productName}
                       />
                     </div>
-                    <div className="productName">
-                      <h3 className="product-title">
-                        {truncateText(product.productName, 3)}
-                        {/* {product.productName} */}
-                      </h3>
-                      <div className="price text-end">
-                        {selectedWeights[product._id] ? (
-                          <>
-                            {selectedWeights[product._id]?.discountPercentage >
-                              0 ? (
-                              <>
-                                <span className="current-price">
-                                  <del>
-                                    &#8377;{" "}
+                    <div className="p-2">
+                      <div className="productName">
+                        <h3 className="product-title">
+                          {truncateText(product.productName, 3)}
+                          {/* {product.productName} */}
+                        </h3>
+                        <div className="price text-end">
+                          {selectedWeights[product._id] ? (
+                            <>
+                              {selectedWeights[product._id]?.discountPercentage >
+                                0 ? (
+                                <>
+                                <div>
+                                  <span className="current-price">
+                                    <del>
+                                      &#8377;{" "}
+                                      {
+                                        selectedWeights[product._id]
+                                          ?.originalPrice
+                                      }
+                                    </del>
+                                  </span>
+                                </div>
+                                <div>
+                                  <span className="original-price">
+                                    Off{" "}
                                     {
                                       selectedWeights[product._id]
-                                        ?.originalPrice
+                                        ?.discountPercentage
                                     }
-                                  </del>
-                                </span>{" "}
-                                <br />
-                                <span className="original-price">
-                                  Off{" "}
-                                  {
-                                    selectedWeights[product._id]
-                                      ?.discountPercentage
-                                  }
-                                  %
-                                </span>{" "}
-                                <br />
-                                <span className="current-price">
+                                    %
+                                  </span>
+                                </div>
+                                <div>
+                                  <span className="current">
+                                    &#8377; {selectedWeights[product._id]?.price}
+                                  </span>
+                                </div>
+                                </>
+                              ) : (
+                                <div>
+                                <span className="current">
                                   &#8377; {selectedWeights[product._id]?.price}
                                 </span>
-                              </>
-                            ) : (
-                              <span className="current-price">
-                                &#8377; {selectedWeights[product._id]?.price}
-                              </span>
-                            )}
-                          </>
-                        ) : (
-                          <>
-                            {product.productInfo[0].productDiscountPercentage >
-                              0 ? (
-                              <>
-                                <span className="current-price">
-                                  <del>
+                                </div>
+                              )}
+                            </>
+                          ) : (
+                            <>
+                              {product.productInfo[0].productDiscountPercentage >
+                                0 ? (
+                                <>
+                                  <span className="current-price">
+                                    <del>
+                                      &#8377;{" "}
+                                      {product.productInfo[0].productPrice}
+                                    </del>
+                                  </span>{" "}
+                                  <br />
+                                  <span className="original-price">
+                                    Off{" "}
+                                    {
+                                      product.productInfo[0]
+                                        .productDiscountPercentage
+                                    }
+                                    %
+                                  </span>{" "}
+                                  <br />
+                                  <span className="current-price">
                                     &#8377;{" "}
-                                    {product.productInfo[0].productPrice}
-                                  </del>
-                                </span>{" "}
-                                <br />
-                                <span className="original-price">
-                                  Off{" "}
-                                  {
-                                    product.productInfo[0]
-                                      .productDiscountPercentage
-                                  }
-                                  %
-                                </span>{" "}
-                                <br />
+                                    {product.productInfo[0].productFinalPrice}
+                                  </span>
+                                </>
+                              ) : (
                                 <span className="current-price">
                                   &#8377;{" "}
                                   {product.productInfo[0].productFinalPrice}
                                 </span>
-                              </>
-                            ) : (
-                              <span className="current-price">
-                                &#8377;{" "}
-                                {product.productInfo[0].productFinalPrice}
-                              </span>
-                            )}
-                          </>
-                        )}
+                              )}
+                            </>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                    {/* </Link> */}
+                      {/* </Link> */}
 
-                    <label htmlFor={`pot-${product._id}`} className="pot-label">
-                      *Weight:
-                    </label>
-                    <select
-                      id={`pot-${product._id}`}
-                      className="pot-select"
-                      onChange={(e) =>
-                        handleWeightChange(product._id, e.target.value)
-                      }
-                    >
-
-                      {product.productInfo.map((info) => (
-                        <option
-                          key={info.productweight}
-                          value={info.productweight}
-                        >
-                          {info.productweight}
-                        </option>
-                      ))}
-                    </select>
-                    <div className="" style={{ display: 'flex', justifyContent: 'space-between', gap: 5 }}>
-                      <button
-                        onClick={() => addToCart(product)}
-                        className="add-to-cart"
+                      <label htmlFor={`pot-${product._id}`} className="pot-label">
+                        *Weight:
+                      </label>
+                      <select
+                        id={`pot-${product._id}`}
+                        className="pot-select"
+                        onChange={(e) =>
+                          handleWeightChange(product._id, e.target.value)
+                        }
                       >
-                        ADD TO CART
-                      </button>
-                      
-                      {/* remove conflict  */}
-                    <button
-                 onClick={() => handleViewDetails(product._id)}
-                       className="add-to-cart" >
-                      View Details <i class="bi bi-chevron-double-right"></i>
-                    </button>
+
+                        {product.productInfo.map((info) => (
+                          <option
+                            key={info.productweight}
+                            value={info.productweight}
+                          >
+                            {info.productweight}
+                          </option>
+                        ))}
+                      </select>
+                      <div className="" style={{ display: 'flex', justifyContent: 'space-between', gap: 5 }}>
+                        <button
+                          onClick={() => addToCart(product)}
+                          className="add-to-cart"
+                        >
+                          ADD TO CART
+                        </button>
+
+                        {/* remove conflict  */}
+                        <button
+                          onClick={() => handleViewDetails(product._id)}
+                          className="add-to-cart" >
+                          View Details <i class="bi bi-chevron-double-right"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -476,7 +484,7 @@ const Hero = () => {
                 <b>Nature’s Treasure</b> Premium Dry Fruits and Wholesome Goodness for You.
               </h2>
               <p>
-              Power up with the pure energy of nature’s finest dry fruits — handpicked for taste, packed for wellness. Your health journey just got delicious!
+                Power up with the pure energy of nature’s finest dry fruits — handpicked for taste, packed for wellness. Your health journey just got delicious!
               </p>
               <Link className="button_" to="/all-products">
                 Check More Products <i class="bi bi-bag"></i>
@@ -525,12 +533,12 @@ const Hero = () => {
                     <h6>Frozen Fruits</h6>
                     <h4>Best Quality Frozen Fruits</h4>
                     <p>
-                    In the Frozen Fruits category, customers can enjoy 
-                    a vibrant selection of fruits, harvested at peak ripeness 
-                    and flash-frozen to lock in their natural flavor and nutrition. 
-                    From everyday favorites to exotic varieties, this section offers 
-                    the perfect
-                    ingredients for smoothies, desserts, and healthy snacking.
+                      In the Frozen Fruits category, customers can enjoy
+                      a vibrant selection of fruits, harvested at peak ripeness
+                      and flash-frozen to lock in their natural flavor and nutrition.
+                      From everyday favorites to exotic varieties, this section offers
+                      the perfect
+                      ingredients for smoothies, desserts, and healthy snacking.
                     </p>
                     {/* <Link className="button_" to="">
                       Show More
@@ -546,13 +554,13 @@ const Hero = () => {
                   <h4>Best Quality Dry Fruits
                   </h4>
                   <p>
-                    In the Dry Fruits category, customers can 
+                    In the Dry Fruits category, customers can
                     discover a premium selection of nutrient-packed
-                     dried fruits, carefully sourced and dried to 
-                     perfection. Whether you’re looking for a quick 
-                     snack, a boost of energy, or a natural ingredient 
-                     for your recipes, this section offers the finest dried 
-                     fruits, rich in flavor and health benefits.
+                    dried fruits, carefully sourced and dried to
+                    perfection. Whether you’re looking for a quick
+                    snack, a boost of energy, or a natural ingredient
+                    for your recipes, this section offers the finest dried
+                    fruits, rich in flavor and health benefits.
                   </p>
                   {/* <Link className="button_" to="">
                     Show More
@@ -568,12 +576,12 @@ const Hero = () => {
                   <h4>Pure and Authentic Shilajit
                   </h4>
                   <p>
-                  In the Shilajit category, customers can 
-                  discover the power of nature’s most potent
-                   mineral supplement. Sourced from the pristine 
-                   heights of the Himalayas, our Shilajit is pure, 
-                   unrefined, and packed with essential minerals and 
-                   nutrients. Perfect for boosting energy, enhancing
+                    In the Shilajit category, customers can
+                    discover the power of nature’s most potent
+                    mineral supplement. Sourced from the pristine
+                    heights of the Himalayas, our Shilajit is pure,
+                    unrefined, and packed with essential minerals and
+                    nutrients. Perfect for boosting energy, enhancing
                     vitality, and promoting overall wellness, this natural supplement is a must-have for a balanced and healthy lifestyle.
                   </p>
                   {/* <Link className="button_" to="">

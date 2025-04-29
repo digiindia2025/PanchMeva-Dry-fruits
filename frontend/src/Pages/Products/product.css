@@ -44,7 +44,7 @@
 }
 
 .productsPage {
-  padding: 6rem 0 2rem 0;
+  padding: 1rem 0 2rem 0;
 }
 
 .product-image-product img {
@@ -54,11 +54,11 @@
 }
 
 .pruduct-spacing {
-  margin-bottom: 9rem;
+  margin-bottom: 0rem;
 }
 
 .product-top-spacing {
-  margin-top: 3rem;
+  margin-top: 0rem;
 }
 
 @media only screen and (max-width: 768px) {

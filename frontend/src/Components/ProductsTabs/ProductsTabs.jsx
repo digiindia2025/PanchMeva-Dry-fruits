@@ -14,19 +14,19 @@ const ProductsTabs = () => {
 
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true, // changed from false to true for smoother UX
     speed: 400,
     autoplay: true,
+    autoplaySpeed: 3000, // autoplay every 3s
     slidesToShow: 4,
     slidesToScroll: 1,
-    initialSlide: 0,
+    arrows: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true,
           dots: true,
         },
       },
@@ -35,21 +35,20 @@ const ProductsTabs = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
           dots: false,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 2, // typically better on small screens
           slidesToScroll: 1,
-          infinite: true,
           dots: false,
         },
       },
     ],
   };
+  
 
   useEffect(() => {
     axios.get("http://localhost:8000/api/all-category").then((response) => {
@@ -123,8 +122,6 @@ const ProductsTabs = () => {
     }
     return text;
   }
-
-
   return (
     <section className="products-tabs mt-3">
       <div className="container">
@@ -151,88 +148,101 @@ const ProductsTabs = () => {
 
         <div className="tab-content mt-3">
           <div className="slider-container">
-            <Slider {...settings}>
-              {products.map((product, index) => {
-                const selectedWeight = selectedWeights[product._id];
-                const selectedProductInfo = product.productInfo.find(
-                  (info) => info.productweight === selectedWeight
-                );
+            {products.length > 0 ? (
+              <Slider {...settings}>
+                {products.map((product, index) => {
+                  const selectedWeight = selectedWeights[product._id];
+                  const selectedProductInfo = product.productInfo.find(
+                    (info) => info.productweight === selectedWeight
+                  );
 
-                return (
-                  <div key={product._id} style={{ width: "100%", background:'red'}}>
-                    <div className="product-card">
-                      {/* <Link to={"/product/product-details"}> */}
-                      <div className="product-image">
-                        <img
-                          src={product.productImage[0]}
-                          alt={`Product ${index + 1}`}
-                        />
-                      </div>
-                      <div className="productName">
-                        <h3 className="product-title">{truncateText(product.productName, 3)}</h3>
-                        <div className="price text-end">
-                          {selectedProductInfo?.productDiscountPercentage > 0 ? (
-                            <>
-                              <span className="current-price">
-                                <del>₹ {selectedProductInfo?.productPrice || "0.00"}</del>
-                              </span>
-                              <br />
-                              <span className="discount-price text-danger">
-                                Off {selectedProductInfo.productDiscountPercentage} %
-                              </span>
-                              <br />
-                              {selectedProductInfo?.productFinalPrice && (
-                                <span className="current-price">₹ {selectedProductInfo.productFinalPrice}</span>
-                              )}
-                            </>
-                          ) : (
-                            selectedProductInfo?.productFinalPrice && (
-                              <span className="current-price">₹ {selectedProductInfo.productFinalPrice}</span>
-                            )
-                          )}
+                  return (
+                    <div key={product._id} style={{ width: "100%", background: 'red' }}>
+                      <div className="product-card">
+                        {/* <Link to={"/product/product-details"}> */}
+                        <div className="product-image">
+                          <img
+                            src={product.productImage[0]}
+                            alt={`Product ${index + 1}`}
+                          />
                         </div>
+                        <div className="p-2">
 
-                      </div>
-                      {/* </Link> */}
-                      <label
-                        htmlFor={`pot-${product._id}`}
-                        className="pot-label"
-                      >
-                        *Weight:
-                      </label>
-                      <select
-                        id={`pot-${product._id}`}
-                        className="pot-select"
-                        value={selectedWeight || ""}
-                        onChange={(e) => handleWeightChange(product._id, e.target.value)}
-                      >
-                        <option value="">--- Please Select ---</option>
-                        {product.productInfo.map((info, idx) => (
-                          <option key={idx} value={info.productweight}>
-                            {info.productweight}
-                          </option>
-                        ))}
-                      </select>
+                          <div className="productName">
+                            <h3 className="product-title">{truncateText(product.productName, 3)}</h3>
+                            <div className="price text-end">
+                              {selectedProductInfo?.productDiscountPercentage > 0 ? (
+                                <>
+                                  <div>
+                                    <span className="current-price">
+                                      <del>₹ {selectedProductInfo?.productPrice || "0.00"}</del>
+                                    </span>
+                                  </div>
+                                  <div>
+                                    <span className="original-price">
+                                      Off {selectedProductInfo.productDiscountPercentage} %
+                                    </span>
+                                  </div>
+                                  <div>
+                                    {selectedProductInfo?.productFinalPrice && (
+                                      <span className="current">₹ {selectedProductInfo.productFinalPrice}</span>
+                                    )}
+                                  </div>
+                                </>
+                              ) : (
+                                <div>
+                                  selectedProductInfo?.productFinalPrice && (
+                                  <span className="current">₹ {selectedProductInfo.productFinalPrice}</span>
+                                  )
+                                </div>
+                              )}
+                            </div>
 
-                      <div className="" style={{ display: 'flex', justifyContent: 'space-between', gap: 5 }}>
-                        <button
-                          onClick={() => handleViewDetails(product._id)}
-                          className="add-to-cart"
-                        >
-                          ADD TO CART
-                        </button>
-                        <button
-                          onClick={() => handleViewDetails(product._id)}
-                          className="add-to-cart"
-                        >
-                          View Details
-                        </button>
+                          </div>
+                          {/* </Link> */}
+                          <label
+                            htmlFor={`pot-${product._id}`}
+                            className="pot-label"
+                          >
+                            *Weight:
+                          </label>
+                          <select
+                            id={`pot-${product._id}`}
+                            className="pot-select"
+                            value={selectedWeight || ""}
+                            onChange={(e) => handleWeightChange(product._id, e.target.value)}
+                          >
+                            <option value="">--- Please Select ---</option>
+                            {product.productInfo.map((info, idx) => (
+                              <option key={idx} value={info.productweight}>
+                                {info.productweight}
+                              </option>
+                            ))}
+                          </select>
+
+                          <div className="" style={{ display: 'flex', justifyContent: 'space-between', gap: 5 }}>
+                            <button
+                              onClick={() => handleViewDetails(product._id)}
+                              className="add-to-cart"
+                            >
+                              ADD TO CART
+                            </button>
+                            <button
+                              onClick={() => handleViewDetails(product._id)}
+                              className="add-to-cart"
+                            >
+                              View Details
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                );
-              })}
-            </Slider>
+                  );
+                })}
+              </Slider>
+            ) : (
+              <p>No products found.</p>
+            )}
           </div>
         </div>
       </div>
