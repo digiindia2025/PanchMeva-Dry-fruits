@@ -174,14 +174,14 @@
 }
 
 .product-card {
-  width: 270px;
-  padding: 16px;
+  width: 95%;
+  /* padding: 16px; */
   border: 1px solid #ddd;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: transparent;
   position: relative;
   text-align: center;
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
 }
 
 .product-card a {
@@ -192,18 +192,15 @@
 
 .product-image {
   margin: auto;
-  position: absolute;
-  top: -120px;
-  left: 20%;
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 250px;
 }
 
-.product-image img {
+/* .product-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 .productName {
   display: flex;
@@ -224,28 +221,35 @@
 }
 
 .product-title {
-  font-size: 14px;
-  /* font-weight: bold; */
-  /* color: var(--themeColor); */
-  margin: 8px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--themeColor);
+  /* margin: 8px 0; */
 }
 
-.price {
-  margin: 8px 0;
-  width: 30%;
-  /* text-align: end; */
+.current{
+  font-size: 22px;
+  color: green;
+  font-weight: 600;
 }
 
 .current-price {
-  font-size: 14px;
-  /* font-weight: bold; */
+  font-size: 16px;
+  font-weight: 600;
   color: var(--green);
 }
 
 .original-price {
-  font-size: 12px;
-  color: red;
-  /* text-decoration: line-through; */
+  position: absolute;
+  right: 0;
+  background-color: var(--themeColor);
+  top: 0;
+  font-size: 14px;
+  padding: 3px 10px 2px 15px;
+  border-radius: 0px 10px 0px 0px;
+  clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  color: white;
+  font-weight: 600;
   margin-left: 8px;
 }
 
@@ -254,7 +258,7 @@
   text-align: left;
   color: #f00;
   font-size: 14px;
-  margin: 8px 0 4px;
+  margin: 0px 0 4px;
 }
 
 /* 
@@ -484,11 +488,11 @@ select:focus-visible {
 
 
 .product-image img {
-  width: 250px;
-  height: 120px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  margin-left: -45px;
-  border-radius: -1px;
+  /* margin-left: -45px; */
+  /* border-radius: -1px; */
   
 }
 
@@ -545,8 +549,8 @@ select:focus-visible {
 
   .product-card {
     width: 96%;
-    padding: 20px 5px;
-    margin-top: 5rem;
+    /* padding: 20px 5px; */
+    margin-top: 0rem;
     height: fit-content;
   }
 
@@ -560,22 +564,19 @@ select:focus-visible {
 
   .add-to-cart {
     max-width: fit-content;
-    font-size: 12px;
+    font-size: 8px;
+    border-radius: 5px;
+    padding: 5px 10px;
   }
 
   .product-image {
-    margin: auto;
-    position: absolute;
-    top: 77px;
-    left: 17%;
-    width: 100px;
-    height: 200px;
+    width: 100%;
+    height: 150px;
   }
 
   .product-image img {
-    width: 100px;
-    top: -70px;
-    left: 25px;
+    width: 100%;
+    height: 100%;
   }
 
   .product-title {
@@ -592,6 +593,12 @@ select:focus-visible {
   .current-price {
     font-size: 12px;
   }
+
+  .current{
+    font-size: 16px;
+
+  }
+  
 
   .original-price {
     font-size: 12px;
@@ -641,7 +648,7 @@ select:focus-visible {
   }
 
   .price {
-    width: 50%;
+    width: 100%;
   }
 
 }

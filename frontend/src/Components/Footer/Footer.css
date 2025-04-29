@@ -20,7 +20,9 @@
 .footer-section h4 {
   font-size: 18px;
   margin-bottom: 15px;
-  color: var(--themeColor);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
@@ -58,7 +60,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 26px;
   color: white;
   transition: transform 0.3s, background-color 0.3s;
 }
